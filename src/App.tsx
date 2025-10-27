@@ -1,45 +1,47 @@
-import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Industries from './components/Industries';
-import Testimonials from './components/Testimonials';
-import Blogs from './components/Blogs';
-import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
-import ServicePage from './components/ServicePage';
 import CookieConsent from './components/CookieConsent';
+import HomePage from './pages/HomePage';
+import DynamicServicePage from './pages/DynamicServicePage';
+import DynamicHirePage from './pages/DynamicHirePage';
+import DynamicIndustryPage from './pages/DynamicIndustryPage';
+import DynamicProductPage from './pages/DynamicProductPage';
+import AboutPage from './pages/About';
+import CareerPage from './pages/Careers';
+import TestimonialPage from './pages/Testimonials';
+import FaqPage from './pages/Faq';
+import BlogPage from './pages/Blogs';
+import ContactPage from './pages/Contact';
+import FreeToolPage from './pages/FreeToolPage';
+import PricingPage from './pages/PricingPage';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'service'>('home');
-
-  if (currentPage === 'service') {
-    return (
+  return (
+    <Router>
       <div className="min-h-screen bg-white">
-        <Navigation onNavigate={() => setCurrentPage('home')} />
-        <ServicePage />
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services/:serviceSlug" element={<DynamicServicePage />} />
+          <Route path="/hireus/:hireusSlug" element={<DynamicHirePage />} />
+          <Route path="/industry/:industrySlug" element={<DynamicIndustryPage />} />
+          <Route path="/product/:productSlug" element={<DynamicProductPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/careers" element={<CareerPage />} />
+          <Route path="/testimonials" element={<TestimonialPage />} />
+          <Route path="/resources/faq" element={<FaqPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/free-tools" element={<FreeToolPage />} />
+          <Route path="/pricing-tools" element={<PricingPage />} />
+        </Routes>
         <Footer />
+        <Chatbot />
         <CookieConsent />
       </div>
-    );
-  }
-
-  return (
-    <div className="min-h-screen bg-white">
-      <Navigation onNavigate={() => setCurrentPage('service')} />
-      <Hero onViewService={() => setCurrentPage('service')} />
-      <About />
-      <Services onServiceClick={() => setCurrentPage('service')} />
-      <Industries />
-      <Testimonials />
-      <Blogs />
-      <ContactCTA />
-      <Footer />
-      <Chatbot />
-      <CookieConsent />
-    </div>
+    </Router>
   );
 }
 

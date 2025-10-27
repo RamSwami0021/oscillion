@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronDown, Menu, X, ShoppingBag, Heart, GraduationCap, Building2, Shield, Truck, Sparkles, Plane, Sprout, Film, DollarSign, Trophy, UtensilsCrossed, PawPrint, CookingPot } from 'lucide-react';
 
 interface SubItem {
@@ -18,11 +19,7 @@ interface NavItem {
   categories?: Category[];
 }
 
-interface NavigationProps {
-  onNavigate?: () => void;
-}
-
-const Navigation = ({ onNavigate }: NavigationProps = {}) => {
+const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -51,24 +48,24 @@ const Navigation = ({ onNavigate }: NavigationProps = {}) => {
         {
           title: 'About',
           items: [
-            { label: 'About Us', href: '#about' },
-            { label: 'Careers', href: '#careers' },
-            { label: 'Testimonials', href: '#testimonials' },
+            { label: 'About Us', href: 'about' },
+            { label: 'Careers', href: 'careers' },
+            { label: 'Testimonials', href: 'testimonials' },
           ],
         },
         {
           title: 'Resources',
           items: [
-            { label: 'Engagement Models', href: '#engagement' },
-            { label: 'Confidentiality', href: '#confidentiality' },
-            { label: 'FAQs', href: '#faqs' },
+            { label: 'Engagement Models', href: 'resources/engagement' },
+            { label: 'Confidentiality', href: 'resources/confidentiality' },
+            { label: 'FAQs', href: 'resources/faqs' },
           ],
         },
         {
           title: 'Connect',
           items: [
-            { label: 'Contact Us', href: '#contact' },
-            { label: 'Blogs', href: '#blogs' },
+            { label: 'Contact Us', href: 'contact' },
+            { label: 'Blogs', href: 'blogs' },
           ],
         },
       ],
@@ -77,87 +74,77 @@ const Navigation = ({ onNavigate }: NavigationProps = {}) => {
       label: 'Services',
       categories: [
         {
-          title: 'Cyber Security',
-          items: [
-            { label: 'Firewalls Solutions', href: '#firewalls' },
-            { label: 'Security Proxy Solutions', href: '#security-proxy' },
-            { label: 'Endpoint Security Solutions', href: '#endpoint-security' },
-            { label: 'Data Loss Prevention (DLP)', href: '#dlp' },
-            { label: 'SIEM & Log Management Solutions', href: '#siem' },
-            { label: 'Cloud Security Solutions', href: '#cloud-security' },
-          ],
-        },
-        {
           title: 'Generative AI',
           items: [
-            { label: 'AI Strategy Consulting', href: '#ai-strategy' },
-            { label: 'AI Development', href: '#ai-development' },
-            { label: 'AI Integration', href: '#ai-integration' },
-            { label: 'AI Training and Support', href: '#ai-training' },
-            { label: 'AI Engagement', href: '#ai-engagement' },
-            { label: 'AI Ethics and Compliance', href: '#ai-ethics' },
+            { label: 'Generative AI Overview', href: '/services/generative-ai/overview' },
+            { label: 'AI Strategy Consulting', href: '/services/generative-ai/ai-strategy' },
+            { label: 'AI Development', href: '/services/generative-ai/ai-development' },
+            { label: 'AI Integration', href: '/services/generative-ai/ai-integration' },
+            { label: 'AI Training and Support', href: '/services/generative-ai/ai-training' },
+            { label: 'AI Engagement', href: '/services/generative-ai/ai-engagement' },
           ],
         },
         {
           title: 'Cloud Services',
           items: [
-            { label: 'AWS', href: '#aws' },
-            { label: 'Microsoft Azure', href: '#azure' },
-            { label: 'Google Cloud Platform (GCP)', href: '#gcp' },
+            { label: 'Cloud Services Overview', href: '/services/cloud-services/overview' },
+            { label: 'AWS', href: '/services/cloud-services/aws' },
+            { label: 'Microsoft Azure', href: '/services/cloud-services/azure' },
+            { label: 'Google Cloud Platform (GCP)', href: '/services/cloud-services/gcp' },
           ],
         },
         {
           title: 'Web Development',
           items: [
-            { label: 'PHP', href: '#php' },
-            { label: 'Mean Stack', href: '#mean-stack' },
-            { label: 'Node JS', href: '#nodejs' },
-            { label: 'Angular JS', href: '#angularjs' },
-            { label: 'Python Web', href: '#python-web' },
-            { label: 'Code Igniter', href: '#codeigniter' },
-            { label: 'Laravel', href: '#laravel' },
-            { label: 'Cake PHP', href: '#cakephp' },
+            { label: 'PHP', href: '/services/web-development/php' },
+            { label: 'Mean Stack', href: '/services/web-development/mean-stack' },
+            { label: 'Node JS', href: '/services/web-development/nodejs' },
+            { label: 'Angular JS', href: '/services/web-development/angularjs' },
+            { label: 'Python Web', href: '/services/web-development/python-web' },
+            { label: 'Code Igniter', href: '/services/web-development/codeigniter' },
+            { label: 'Laravel', href: '/services/web-development/laravel' },
+            { label: 'Cake PHP', href: '/services/web-development/cakephp' },
           ],
         },
         {
           title: 'App Development',
           items: [
-            { label: 'iOS', href: '#ios' },
-            { label: 'Android', href: '#android' },
-            { label: 'Cross Platform', href: '#cross-platform' },
-            { label: 'Flutter', href: '#flutter' },
-            { label: 'Wearable', href: '#wearable' },
-            { label: 'React Native', href: '#react-native' },
+            { label: 'iOS', href: '/services/app-development/ios' },
+            { label: 'Android', href: '/services/app-development/android' },
+            { label: 'Cross Platform', href: '/services/app-development/cross-platform' },
+            { label: 'Flutter', href: '/services/app-development/flutter' },
+            { label: 'Wearable', href: '/services/app-development/wearable' },
+            { label: 'React Native', href: '/services/app-development/react-native' },
           ],
         },
         {
           title: 'CMS & Ecommerce',
           items: [
-            { label: 'WordPress', href: '#wordpress' },
-            { label: 'Magento', href: '#magento' },
-            { label: 'Joomla', href: '#joomla' },
-            { label: 'Shopify', href: '#shopify' },
-            { label: 'Opencart', href: '#opencart' },
-            { label: 'Drupal', href: '#drupal' },
+            { label: 'WordPress', href: '/services/cms-ecommerce/wordpress' },
+            { label: 'Magento', href: '/services/cms-ecommerce/magento' },
+            { label: 'Joomla', href: '/services/cms-ecommerce/joomla' },
+            { label: 'Shopify', href: '/services/cms-ecommerce/shopify' },
+            { label: 'Opencart', href: '/services/cms-ecommerce/opencart' },
+            { label: 'Drupal', href: '/services/cms-ecommerce/drupal' },
           ],
         },
         {
           title: 'Digital Marketing',
           items: [
-            { label: 'SEO', href: '#seo' },
-            { label: 'SMO', href: '#smo' },
-            { label: 'PPC', href: '#ppc' },
-            { label: 'Email Marketing', href: '#email-marketing' },
-            { label: 'Whatsapp Marketing', href: '#whatsapp-marketing' },
+            { label: 'SEO', href: '/services/digital-marketing/seo' },
+            { label: 'SMO', href: '/services/digital-marketing/smo' },
+            { label: 'PPC', href: '/services/digital-marketing/ppc' },
+            { label: 'Email Marketing', href: '/services/digital-marketing/email-marketing' },
+            { label: 'Whatsapp Marketing', href: '/services/digital-marketing/whatsapp-marketing' },
           ],
         },
         {
           title: 'Designing',
           items: [
-            { label: 'Logo Designing', href: '#logo-designing' },
-            { label: 'UI/UX', href: '#ui-ux' },
-            { label: 'Graphic Designing', href: '#graphic-designing' },
-            { label: 'Custom Designing', href: '#custom-designing' },
+            { label: 'Logo Designing', href: '/services/designing/logo-designing' },
+            { label: 'UI/UX', href: '/services/designing/ui-ux' },
+            { label: 'Graphic Designing', href: '/services/designing/graphic-designing' },
+            { label: 'Custom Designing', href: '/services/designing/custom-designing' },
           ],
         },
       ],
@@ -168,33 +155,33 @@ const Navigation = ({ onNavigate }: NavigationProps = {}) => {
         {
           title: 'Frontend',
           items: [
-            { label: 'React Developers', href: '#hire-react' },
-            { label: 'Vue.js Developers', href: '#hire-vue' },
-            { label: 'Angular Developers', href: '#hire-angular' },
+            { label: 'React Developers', href: '/hire/frontend/reactjs' },
+            { label: 'Vue.js Developers', href: '/hire/frontend/vuejs' },
+            { label: 'Angular Developers', href: '/hire/frontend/angular' },
           ],
         },
         {
           title: 'Backend',
           items: [
-            { label: 'Node.js Developers', href: '#hire-node' },
-            { label: 'Python Developers', href: '#hire-python' },
-            { label: 'PHP Developers', href: '#hire-php' },
+            { label: 'Node.js Developers', href: '/hire/backend/nodejs' },
+            { label: 'Python Developers', href: '/hire/backend/python' },
+            { label: 'PHP Developers', href: '/hire/backend/php' },
           ],
         },
         {
           title: 'Mobile',
           items: [
-            { label: 'iOS Developers', href: '#hire-ios' },
-            { label: 'Android Developers', href: '#hire-android' },
-            { label: 'React Native Developers', href: '#hire-react-native' },
+            { label: 'iOS Developers', href: '/hire/mobile/ios' },
+            { label: 'Android Developers', href: '/hire/mobile/android' },
+            { label: 'React Native Developers', href: '/hire/mobile/react-native' },
           ],
         },
         {
           title: 'Specialized',
           items: [
-            { label: 'eCommerce Developers', href: '#hire-ecommerce' },
-            { label: 'CMS Developers', href: '#hire-cms' },
-            { label: 'DevOps Engineers', href: '#hire-devops' },
+            { label: 'eCommerce Developers', href: '/hire/specialized/ecommerce-developer' },
+            { label: 'CMS Developers', href: '/hire/specialized/cms-developers' },
+            { label: 'DevOps Engineers', href: '/hire/specialized/devops-engineers' },
           ],
         },
       ],
@@ -205,42 +192,42 @@ const Navigation = ({ onNavigate }: NavigationProps = {}) => {
         {
           title: 'Retail & Commerce',
           items: [
-            { label: 'Ecommerce', href: '#industry-ecommerce', icon: <ShoppingBag className="w-4 h-4" /> },
-            { label: 'Fashion', href: '#industry-fashion', icon: <Sparkles className="w-4 h-4" /> },
-            { label: 'Food', href: '#industry-food', icon: <UtensilsCrossed className="w-4 h-4" /> },
-            { label: 'Kitchenware', href: '#industry-kitchenware', icon: <CookingPot className="w-4 h-4" /> },
+            { label: 'Ecommerce', href: '/industry/retail-commerce/ecommerce', icon: <ShoppingBag className="w-4 h-4" /> },
+            { label: 'Fashion', href: '/industry/retail-commerce/fashion', icon: <Sparkles className="w-4 h-4" /> },
+            { label: 'Food', href: '/industry/retail-commerce/food', icon: <UtensilsCrossed className="w-4 h-4" /> },
+            { label: 'Kitchenware', href: '/industry/retail-commerce/kitchenware', icon: <CookingPot className="w-4 h-4" /> },
           ],
         },
         {
           title: 'Healthcare & Education',
           items: [
-            { label: 'Healthcare', href: '#industry-healthcare', icon: <Heart className="w-4 h-4" /> },
-            { label: 'Education', href: '#industry-education', icon: <GraduationCap className="w-4 h-4" /> },
-            { label: 'Pet', href: '#industry-pet', icon: <PawPrint className="w-4 h-4" /> },
+            { label: 'Healthcare', href: '/industry/healthcare-education/healthcare', icon: <Heart className="w-4 h-4" /> },
+            { label: 'Education', href: '/industry/healthcare-education/education', icon: <GraduationCap className="w-4 h-4" /> },
+            { label: 'Pet', href: '/industry/healthcare-education/pet', icon: <PawPrint className="w-4 h-4" /> },
           ],
         },
         {
           title: 'Finance & Security',
           items: [
-            { label: 'Finance', href: '#industry-finance', icon: <DollarSign className="w-4 h-4" /> },
-            { label: 'Insurance', href: '#industry-insurance', icon: <Shield className="w-4 h-4" /> },
-            { label: 'Security', href: '#industry-security', icon: <Shield className="w-4 h-4" /> },
+            { label: 'Finance', href: '/industry/finance-security/finance', icon: <DollarSign className="w-4 h-4" /> },
+            { label: 'Insurance', href: '/industry/finance-security/insurance', icon: <Shield className="w-4 h-4" /> },
+            { label: 'Security', href: '/industry/finance-security/security', icon: <Shield className="w-4 h-4" /> },
           ],
         },
         {
           title: 'Infrastructure',
           items: [
-            { label: 'Real Estate', href: '#industry-realestate', icon: <Building2 className="w-4 h-4" /> },
-            { label: 'Logistics', href: '#industry-logistics', icon: <Truck className="w-4 h-4" /> },
-            { label: 'Travel', href: '#industry-travel', icon: <Plane className="w-4 h-4" /> },
-            { label: 'Agritech', href: '#industry-agritech', icon: <Sprout className="w-4 h-4" /> },
+            { label: 'Real Estate', href: '/industry/infrastructure/realestate', icon: <Building2 className="w-4 h-4" /> },
+            { label: 'Logistics', href: '/industry/infrastructure/logistics', icon: <Truck className="w-4 h-4" /> },
+            { label: 'Travel', href: '/industry/infrastructure/travel', icon: <Plane className="w-4 h-4" /> },
+            { label: 'Agritech', href: '/industry/infrastructure/agritech', icon: <Sprout className="w-4 h-4" /> },
           ],
         },
         {
           title: 'Media & Entertainment',
           items: [
-            { label: 'Media', href: '#industry-media', icon: <Film className="w-4 h-4" /> },
-            { label: 'Sports', href: '#industry-sports', icon: <Trophy className="w-4 h-4" /> },
+            { label: 'Media', href: '/industry/media-entertainment/media', icon: <Film className="w-4 h-4" /> },
+            { label: 'Sports', href: '/industry/media-entertainment/sports', icon: <Trophy className="w-4 h-4" /> },
           ],
         },
       ],
@@ -265,8 +252,8 @@ const Navigation = ({ onNavigate }: NavigationProps = {}) => {
         },
       ],
     },
-    { label: 'Free Tools', href: '#free-tools' },
-    { label: 'Pricing', href: '#pricing-tools' },
+    { label: 'Free Tools', href: '/free-tools' },
+    { label: 'Pricing', href: '/pricing-tools' },
   ];
 
   const handleDropdownToggle = (label: string) => {
@@ -290,9 +277,9 @@ const Navigation = ({ onNavigate }: NavigationProps = {}) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-black tracking-tight">
+            <Link to="/" className="text-2xl font-bold text-black tracking-tight">
               Oscillion
-            </a>
+            </Link>
           </div>
 
           <div className="hidden lg:flex items-center space-x-8">

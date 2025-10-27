@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Shield,
   Sparkles,
@@ -17,13 +18,10 @@ interface ServiceCard {
   icon: React.ReactNode;
   title: string;
   description: string;
+  link?: string;
 }
 
-interface ServicesProps {
-  onServiceClick?: () => void;
-}
-
-const Services = ({ onServiceClick }: ServicesProps = {}) => {
+const Services = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -32,16 +30,19 @@ const Services = ({ onServiceClick }: ServicesProps = {}) => {
       icon: <Shield className="w-8 h-8" />,
       title: 'Cyber Security',
       description: 'Protect your digital assets with enterprise-grade security solutions and threat prevention.',
+      link: '/services/cyber-security',
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: 'Generative AI',
       description: 'Leverage cutting-edge AI technology to automate processes and enhance decision-making.',
+      link: '/services/generative-ai',
     },
     {
       icon: <Cloud className="w-8 h-8" />,
       title: 'Cloud Services',
       description: 'Scalable cloud infrastructure solutions for seamless business operations and growth.',
+      link: '/services/cloud-services',
     },
     {
       icon: <Globe className="w-8 h-8" />,
@@ -176,52 +177,72 @@ const Services = ({ onServiceClick }: ServicesProps = {}) => {
               msOverflowStyle: 'none',
             }}
           >
-            {services.map((service, index) => (
-              <div
-                key={service.title}
-                onClick={onServiceClick}
-                className={`group flex-shrink-0 w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 snap-center cursor-pointer ${
-                  isScrolling ? '' : 'hover:-translate-y-3'
-                }`}
-                style={{
-                  animation: `slideInFromRight 0.6s ease-out ${index * 0.1}s both`,
-                }}
-              >
-                <div className="relative mb-6">
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-500 blur-xl" />
-                  <div className="relative w-16 h-16 bg-gradient-to-br from-black to-gray-700 text-white rounded-xl flex items-center justify-center transform transition-all duration-500 group-hover:rotate-6 group-hover:scale-110">
-                    {service.icon}
+            {services.map((service, index) => {
+              const CardContent = (
+                <>
+                  <div className="relative mb-6">
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-500 blur-xl" />
+                    <div className="relative w-16 h-16 bg-gradient-to-br from-black to-gray-700 text-white rounded-xl flex items-center justify-center transform transition-all duration-500 group-hover:rotate-6 group-hover:scale-110">
+                      {service.icon}
+                    </div>
                   </div>
+
+                  <h3 className="text-xl font-bold text-black mb-4 transition-colors duration-300 group-hover:text-gray-700">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  <div className="mt-6 flex items-center text-black font-medium opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    <span className="text-sm">Learn More</span>
+                    <svg
+                      className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </div>
+
+                  <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-black transition-all duration-500 pointer-events-none" />
+                </>
+              );
+
+              const className = `group flex-shrink-0 w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 snap-center ${
+                isScrolling ? '' : 'hover:-translate-y-3'
+              } ${service.link ? 'cursor-pointer' : ''}`;
+
+              const style = {
+                animation: `slideInFromRight 0.6s ease-out ${index * 0.1}s both`,
+              };
+
+              return service.link ? (
+                <Link
+                  key={service.title}
+                  to={service.link}
+                  className={className}
+                  style={style}
+                >
+                  {CardContent}
+                </Link>
+              ) : (
+                <div
+                  key={service.title}
+                  className={className}
+                  style={style}
+                >
+                  {CardContent}
                 </div>
-
-                <h3 className="text-xl font-bold text-black mb-4 transition-colors duration-300 group-hover:text-gray-700">
-                  {service.title}
-                </h3>
-
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-
-                <div className="mt-6 flex items-center text-black font-medium opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                  <span className="text-sm">Learn More</span>
-                  <svg
-                    className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </div>
-
-                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-black transition-all duration-500 pointer-events-none" />
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="flex justify-center gap-2 mt-8">
