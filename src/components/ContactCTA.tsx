@@ -2,20 +2,20 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 
 const ContactCTA = () => {
   return (
-    <section id="quote" className="py-24 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
+    <section id="quote" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl opacity-5 -top-48 -left-48 animate-float"></div>
         <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl opacity-5 -bottom-48 -right-48 animate-float-delayed"></div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <MessageCircle className="w-16 h-16 text-white mx-auto mb-6 animate-fadeInUp" />
+        <MessageCircle className="w-12 h-12 sm:w-16 sm:h-16 text-white mx-auto mb-4 sm:mb-6 animate-fadeInUp" />
 
-        <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 animate-fadeInUp animation-delay-200">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 animate-fadeInUp animation-delay-200 leading-tight">
           Let's Build Something Great Together
         </h2>
 
-        <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto animate-fadeInUp animation-delay-400">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto animate-fadeInUp animation-delay-400 leading-relaxed">
           Ready to transform your business with cutting-edge technology? Our team of experts is here to help you achieve your digital goals.
         </p>
 
@@ -36,18 +36,18 @@ const ContactCTA = () => {
           </a>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 animate-fadeInUp animation-delay-800">
+        <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 animate-fadeInUp animation-delay-800">
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-2">24/7</div>
-            <div className="text-gray-400">Support Available</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">24/7</div>
+            <div className="text-xs sm:text-sm text-gray-400">Support Available</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-2">&lt;48hrs</div>
-            <div className="text-gray-400">Response Time</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">&lt;48hrs</div>
+            <div className="text-xs sm:text-sm text-gray-400">Response Time</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-2">Free</div>
-            <div className="text-gray-400">Consultation</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">Free</div>
+            <div className="text-xs sm:text-sm text-gray-400">Consultation</div>
           </div>
         </div>
       </div>

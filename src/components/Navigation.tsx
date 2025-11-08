@@ -237,26 +237,6 @@ const Navigation = () => {
         },
       ],
     },
-    // {
-    //   label: 'Products',
-    //   categories: [
-    //     {
-    //       title: 'Category Demo1',
-    //       items: [
-    //         { label: 'Demo A', href: '/product/demo1/demo-a' },
-    //         { label: 'Demo B', href: '/product/demo1/demo-b' },
-    //         { label: 'Demo C', href: '/product/demo1/demo-c' },
-    //       ],
-    //     },
-    //     {
-    //       title: 'Category Demo2',
-    //       items: [
-    //         { label: 'Demo D', href: '/product/demo2/demo-d' },
-    //         { label: 'Demo E', href: '/product/demo2/demo-e' },
-    //       ],
-    //     },
-    //   ],
-    // },
     { label: 'Training', href: '/training-programs' },
     { label: 'Pricing', href: '/pricing' },
   ];
@@ -275,22 +255,23 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white'
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white shadow-lg' : 'bg-white shadow-md'
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
              <img
   src="/Oscillion Software-02.png"
   alt="Oscillion Software"
-  className="h-12 w-auto logo-mobile"
+  className="h-10 sm:h-12 w-auto logo-mobile"
 />
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navItems.map((item) => (
               <div
                 key={item.label}
@@ -300,9 +281,9 @@ const Navigation = () => {
                   <>
                     <button
                       onClick={() => handleDropdownClick(item.label)}
-                      className="flex items-center space-x-1 text-black hover:text-gray-600 transition-colors duration-300 py-2"
+                      className="flex items-center space-x-1 text-black hover:text-gray-600 transition-colors duration-300 py-2 text-sm xl:text-base font-medium"
                     >
-                      <span className="font-medium">{item.label}</span>
+                      <span>{item.label}</span>
                       <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
                     </button>
                     {openDropdown === item.label && (
@@ -311,7 +292,7 @@ const Navigation = () => {
                           className="fixed inset-0 bg-black bg-opacity-20 z-40"
                           onClick={() => setOpenDropdown(null)}
                         />
-                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white shadow-2xl rounded-lg overflow-hidden animate-dropdown border border-gray-100 z-50 max-h-[calc(100vh-6rem)] overflow-y-auto">
+                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white shadow-2xl rounded-xl overflow-hidden animate-dropdown border border-gray-100 z-50 max-h-[calc(100vh-6rem)] overflow-y-auto">
 
                           <div className={`p-6 grid gap-8 ${item.categories.length <= 2 ? 'grid-cols-2 min-w-[400px]' :
                             item.categories.length === 3 ? 'grid-cols-3 min-w-[600px]' :
@@ -353,7 +334,7 @@ const Navigation = () => {
                 ) : (
                   <a
                     href={item.href}
-                    className="text-black font-medium hover:text-gray-600 transition-colors duration-300"
+                    className="text-black font-medium hover:text-gray-600 transition-colors duration-300 text-sm xl:text-base"
                   >
                     {item.label}
                   </a>
@@ -365,7 +346,7 @@ const Navigation = () => {
           <div className="hidden lg:block">
             <a
               href="/request-quote"
-              className="inline-block px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-all duration-300 transform hover:scale-105"
+              className="inline-block px-4 xl:px-6 py-2.5 xl:py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 text-sm xl:text-base font-semibold shadow-lg hover:shadow-xl"
             >
               Request a Quote
             </a>
@@ -374,7 +355,8 @@ const Navigation = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-black p-2"
+              className="text-black p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -389,14 +371,15 @@ const Navigation = () => {
       />
 
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`lg:hidden fixed top-0 right-0 h-full w-80 sm:w-96 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
-        <div className="flex items-center justify-between p-4 border-b border-gray-200">
+        <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50">
           <h2 className="text-xl font-bold text-black">Menu</h2>
           <button
             onClick={() => setIsMobileMenuOpen(false)}
-            className="text-black p-2"
+            className="text-black p-2 hover:bg-gray-200 rounded-lg transition-colors"
+            aria-label="Close menu"
           >
             <X className="w-6 h-6" />
           </button>
@@ -409,9 +392,9 @@ const Navigation = () => {
                 <>
                   <button
                     onClick={() => handleDropdownToggle(item.label)}
-                    className="flex items-center justify-between w-full px-4 py-3 text-black hover:bg-gray-100 rounded-md transition-all duration-200"
+                    className="flex items-center justify-between w-full px-4 py-3 text-black hover:bg-gray-100 rounded-xl transition-all duration-200 font-medium"
                   >
-                    <span className="font-medium">{item.label}</span>
+                    <span>{item.label}</span>
                     <ChevronDown
                       className={`w-4 h-4 transition-transform duration-300 ${openDropdown === item.label ? 'rotate-180' : ''
                         }`}
@@ -421,17 +404,17 @@ const Navigation = () => {
                     className={`overflow-hidden transition-all duration-300 ${openDropdown === item.label ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
                       }`}
                   >
-                    <div className="ml-4 mt-2 space-y-4 animate-slideDown">
+                    <div className="ml-2 mt-2 space-y-4 animate-slideDown">
                       {item.categories.map((category) => (
                         <div key={category.title} className="space-y-2">
-                          <h4 className="text-xs font-bold text-gray-900 uppercase tracking-wider px-4">
+                          <h4 className="text-xs font-bold text-gray-900 uppercase tracking-wider px-4 pt-2">
                             {category.title}
                           </h4>
                           {category.items.map((subItem) => (
                             <a
                               key={subItem.label}
                               href={subItem.href}
-                              className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200"
+                              className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-200"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {subItem.icon && (
@@ -448,7 +431,7 @@ const Navigation = () => {
               ) : (
                 <a
                   href={item.href}
-                  className="block px-4 py-3 text-black hover:bg-gray-100 rounded-md transition-colors duration-200"
+                  className="block px-4 py-3 text-black hover:bg-gray-100 rounded-xl transition-colors duration-200 font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
@@ -458,8 +441,8 @@ const Navigation = () => {
           ))}
           <div className="pt-4">
             <a
-              href="#quote"
-              className="block w-full text-center px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-colors duration-300"
+              href="/request-quote"
+              className="block w-full text-center px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition-colors duration-300 font-semibold shadow-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Get a Quote

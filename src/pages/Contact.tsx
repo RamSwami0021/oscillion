@@ -97,7 +97,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="animate-fadeInLeft">
             <h2 className="text-3xl font-bold text-black mb-6">Send Us a Message</h2>
@@ -317,7 +317,7 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-black text-center mb-12">Our Global Offices</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {offices.map((office, index) => (
               <div
                 key={index}

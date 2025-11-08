@@ -86,9 +86,9 @@ const Footer: FC = () => {
   };
 
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-white border-t-2 border-gray-200">
       {/* Desktop View */}
-      <div className="hidden lg:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="hidden lg:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-5 gap-8 mb-12">
           {footerData.map((col) =>
             col.key === 'signin' ? (
@@ -126,7 +126,7 @@ const Footer: FC = () => {
       </div>
 
       {/* Mobile Accordion */}
-      <div className="lg:hidden max-w-3xl mx-auto px-4 sm:px-6 py-6">
+      <div className="lg:hidden max-w-3xl mx-auto px-4 sm:px-6 py-8">
         <div className="divide-y divide-gray-200">
           {footerData.map((sec, index) => {
             const isOpen = openIndex === index;

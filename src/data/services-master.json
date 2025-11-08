@@ -1,0 +1,452 @@
+{
+  "categories": [
+    {
+      "id": "generative-ai",
+      "name": "Generative AI",
+      "slug": "generative-ai",
+      "icon": "sparkles",
+      "description": "Leverage cutting-edge AI technology to automate processes and enhance decision-making with intelligent solutions.",
+      "color": "from-black to-gray-800",
+      "services": [
+        {
+          "id": "ai-strategy",
+          "name": "AI Strategy Consulting",
+          "slug": "ai-strategy-consulting",
+          "shortDesc": "Expert guidance to develop and implement your AI strategy for business transformation.",
+          "longDesc": "Our AI Strategy Consulting service helps businesses navigate the complex landscape of artificial intelligence. We work closely with your team to understand your business objectives and develop a comprehensive AI roadmap tailored to your specific needs.",
+          "icon": "target",
+          "features": [
+            "AI Readiness Assessment",
+            "Custom AI Roadmap Development",
+            "Technology Stack Selection",
+            "ROI Analysis & Planning",
+            "Change Management Strategy",
+            "Risk Assessment & Mitigation"
+          ],
+          "benefits": [
+            "Clear AI implementation roadmap",
+            "Reduced implementation risks",
+            "Better resource allocation",
+            "Faster time to value"
+          ],
+          "technologies": ["TensorFlow", "PyTorch", "OpenAI", "Azure AI", "Google AI"],
+          "pricing": {
+            "model": "Project-based",
+            "starting": "₹2,50,000",
+            "duration": "2-4 weeks"
+          }
+        },
+        {
+          "id": "ai-development",
+          "name": "AI Development Services",
+          "slug": "ai-development-services",
+          "shortDesc": "Custom AI solutions and machine learning models tailored to your business needs.",
+          "longDesc": "Build powerful AI applications with our expert development team. From natural language processing to computer vision, we create custom AI solutions that solve real business problems.",
+          "icon": "code",
+          "features": [
+            "Custom ML Model Development",
+            "Natural Language Processing",
+            "Computer Vision Solutions",
+            "Predictive Analytics",
+            "AI Model Training & Optimization",
+            "API Integration"
+          ],
+          "benefits": [
+            "Automated business processes",
+            "Enhanced decision making",
+            "Improved customer experience",
+            "Competitive advantage"
+          ],
+          "technologies": ["Python", "TensorFlow", "Scikit-learn", "Keras", "Hugging Face"],
+          "pricing": {
+            "model": "Fixed Price / Time & Material",
+            "starting": "₹5,00,000",
+            "duration": "8-16 weeks"
+          }
+        },
+        {
+          "id": "ai-integration",
+          "name": "AI Integration Solutions",
+          "slug": "ai-integration-solutions",
+          "shortDesc": "Seamlessly integrate AI capabilities into your existing systems and workflows.",
+          "longDesc": "Connect AI technologies with your existing infrastructure for maximum impact. Our integration services ensure smooth deployment and optimal performance.",
+          "icon": "link",
+          "features": [
+            "API Integration",
+            "Legacy System Integration",
+            "Cloud AI Services Integration",
+            "Data Pipeline Setup",
+            "Performance Optimization",
+            "Monitoring & Maintenance"
+          ],
+          "benefits": [
+            "Seamless AI adoption",
+            "Minimal disruption",
+            "Scalable architecture",
+            "Continuous improvement"
+          ],
+          "technologies": ["REST APIs", "GraphQL", "Docker", "Kubernetes", "AWS/Azure"],
+          "pricing": {
+            "model": "Time & Material",
+            "starting": "₹3,00,000",
+            "duration": "4-8 weeks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cloud-services",
+      "name": "Cloud Services",
+      "slug": "cloud",
+      "icon": "cloud",
+      "description": "Scalable cloud infrastructure solutions for seamless business operations and growth.",
+      "color": "from-gray-800 to-black",
+      "services": [
+        {
+          "id": "aws-solutions",
+          "name": "AWS Solutions",
+          "slug": "aws-solutions",
+          "shortDesc": "Comprehensive AWS cloud services for scalable and reliable infrastructure.",
+          "longDesc": "Leverage the power of Amazon Web Services with our expert implementation and management services. From migration to optimization, we handle all aspects of your AWS infrastructure.",
+          "icon": "cloud",
+          "features": [
+            "AWS Migration Services",
+            "EC2 & Lambda Configuration",
+            "S3 Storage Solutions",
+            "RDS Database Management",
+            "CloudFront CDN Setup",
+            "Security & Compliance"
+          ],
+          "benefits": [
+            "Reduced infrastructure costs",
+            "High availability & scalability",
+            "Enhanced security",
+            "Pay-as-you-go pricing"
+          ],
+          "technologies": ["AWS", "EC2", "Lambda", "S3", "RDS", "CloudFront"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹50,000/month",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "azure-services",
+          "name": "Microsoft Azure",
+          "slug": "azure-services",
+          "shortDesc": "Enterprise-grade cloud solutions powered by Microsoft Azure.",
+          "longDesc": "Deploy, manage, and scale your applications with Microsoft Azure. Our Azure experts help you leverage cloud computing for business transformation.",
+          "icon": "server",
+          "features": [
+            "Azure Migration",
+            "Virtual Machines Setup",
+            "Azure SQL Database",
+            "App Services Configuration",
+            "Azure DevOps Integration",
+            "Active Directory Setup"
+          ],
+          "benefits": [
+            "Enterprise-grade security",
+            "Hybrid cloud capabilities",
+            "Integrated DevOps",
+            "Global reach"
+          ],
+          "technologies": ["Azure", "Azure SQL", "App Services", "DevOps", "AD"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹60,000/month",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "gcp-services",
+          "name": "Google Cloud Platform",
+          "slug": "gcp-services",
+          "shortDesc": "Innovative cloud solutions using Google's powerful infrastructure.",
+          "longDesc": "Harness the power of Google Cloud Platform for your business. From data analytics to machine learning, we help you leverage GCP's advanced capabilities.",
+          "icon": "database",
+          "features": [
+            "GCP Migration",
+            "Compute Engine Setup",
+            "BigQuery Analytics",
+            "Cloud Functions",
+            "Firebase Integration",
+            "Cloud Storage Solutions"
+          ],
+          "benefits": [
+            "Advanced data analytics",
+            "Powerful ML capabilities",
+            "Cost-effective pricing",
+            "Global infrastructure"
+          ],
+          "technologies": ["GCP", "BigQuery", "Firebase", "Cloud Functions", "Compute Engine"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹55,000/month",
+            "duration": "Ongoing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "slug": "web-development",
+      "icon": "globe",
+      "description": "Custom web applications built with modern frameworks for optimal performance.",
+      "color": "from-black to-gray-700",
+      "services": [
+        {
+          "id": "react-development",
+          "name": "React Development",
+          "slug": "react-development",
+          "shortDesc": "Build dynamic, high-performance web applications with React.",
+          "longDesc": "Create modern, responsive web applications using React. Our expert developers build scalable solutions with the latest React technologies and best practices.",
+          "icon": "code",
+          "features": [
+            "React 18+ Development",
+            "Next.js Applications",
+            "Redux State Management",
+            "Component Library Creation",
+            "Performance Optimization",
+            "Responsive Design"
+          ],
+          "benefits": [
+            "Fast, interactive UIs",
+            "Reusable components",
+            "SEO-friendly applications",
+            "Easy maintenance"
+          ],
+          "technologies": ["React", "Next.js", "Redux", "TypeScript", "Tailwind CSS"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "8-12 weeks"
+          }
+        },
+        {
+          "id": "nodejs-development",
+          "name": "Node.js Development",
+          "slug": "nodejs",
+          "shortDesc": "Scalable backend solutions with Node.js for high-performance applications.",
+          "longDesc": "Build robust backend systems with Node.js. We create RESTful APIs, real-time applications, and microservices that scale with your business.",
+          "icon": "server",
+          "features": [
+            "RESTful API Development",
+            "Express.js Applications",
+            "Real-time Solutions",
+            "Microservices Architecture",
+            "Database Integration",
+            "API Security"
+          ],
+          "benefits": [
+            "High performance",
+            "Scalable architecture",
+            "Real-time capabilities",
+            "JavaScript everywhere"
+          ],
+          "technologies": ["Node.js", "Express", "MongoDB", "PostgreSQL", "Socket.io"],
+          "pricing": {
+            "model": "Time & Material",
+            "starting": "₹2,50,000",
+            "duration": "6-10 weeks"
+          }
+        },
+        {
+          "id": "fullstack-development",
+          "name": "Full Stack Development",
+          "slug": "fullstack",
+          "shortDesc": "Complete web solutions from frontend to backend with modern tech stacks.",
+          "longDesc": "Get end-to-end web development services covering both frontend and backend. We build complete solutions using MERN, MEAN, or custom tech stacks.",
+          "icon": "layers",
+          "features": [
+            "Full Stack Solutions",
+            "MERN/MEAN Stack",
+            "Database Design",
+            "API Development",
+            "Authentication & Security",
+            "Deployment & DevOps"
+          ],
+          "benefits": [
+            "Complete solution",
+            "Unified development",
+            "Faster delivery",
+            "Single point of contact"
+          ],
+          "technologies": ["React", "Node.js", "MongoDB", "Express", "Next.js"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹5,00,000",
+            "duration": "12-16 weeks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile-development",
+      "name": "Mobile App Development",
+      "slug": "app-development",
+      "icon": "smartphone",
+      "description": "Native and cross-platform mobile apps that deliver exceptional user experiences.",
+      "color": "from-gray-900 to-black",
+      "services": [
+        {
+          "id": "ios-development",
+          "name": "iOS Development",
+          "slug": "ios",
+          "shortDesc": "Premium iOS applications for iPhone and iPad users.",
+          "longDesc": "Create beautiful, performant iOS applications using Swift and SwiftUI. Our iOS developers build apps that users love, following Apple's design guidelines.",
+          "icon": "smartphone",
+          "features": [
+            "Native iOS Development",
+            "Swift & SwiftUI",
+            "App Store Optimization",
+            "Push Notifications",
+            "In-App Purchases",
+            "Core Data Integration"
+          ],
+          "benefits": [
+            "Native performance",
+            "Beautiful UI/UX",
+            "App Store compliance",
+            "Regular updates"
+          ],
+          "technologies": ["Swift", "SwiftUI", "Xcode", "Core Data", "Firebase"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹4,00,000",
+            "duration": "10-14 weeks"
+          }
+        },
+        {
+          "id": "android-development",
+          "name": "Android Development",
+          "slug": "android",
+          "shortDesc": "Robust Android applications reaching millions of users.",
+          "longDesc": "Build powerful Android applications using Kotlin and Jetpack Compose. We create apps that work seamlessly across Android devices.",
+          "icon": "smartphone",
+          "features": [
+            "Native Android Development",
+            "Kotlin & Jetpack Compose",
+            "Material Design",
+            "Play Store Optimization",
+            "Firebase Integration",
+            "Offline Capabilities"
+          ],
+          "benefits": [
+            "Wide reach",
+            "Native performance",
+            "Modern UI",
+            "Google Play compliance"
+          ],
+          "technologies": ["Kotlin", "Jetpack Compose", "Android Studio", "Firebase", "Room"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "10-14 weeks"
+          }
+        },
+        {
+          "id": "react-native",
+          "name": "React Native",
+          "slug": "react-native",
+          "shortDesc": "Cross-platform mobile apps with single codebase for iOS and Android.",
+          "longDesc": "Develop once, deploy everywhere. Our React Native expertise allows us to build high-quality mobile applications for both iOS and Android platforms efficiently.",
+          "icon": "smartphone",
+          "features": [
+            "Cross-Platform Development",
+            "React Native & Expo",
+            "Native Module Integration",
+            "Shared Codebase",
+            "Hot Reload Development",
+            "App Store Deployment"
+          ],
+          "benefits": [
+            "Cost-effective",
+            "Faster development",
+            "Code reusability",
+            "Easy maintenance"
+          ],
+          "technologies": ["React Native", "Expo", "TypeScript", "Redux", "Firebase"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹4,50,000",
+            "duration": "10-12 weeks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "UI/UX Design",
+      "slug": "designing",
+      "icon": "palette",
+      "description": "Stunning UI/UX designs that create memorable brand experiences.",
+      "color": "from-gray-800 to-gray-900",
+      "services": [
+        {
+          "id": "ui-ux-design",
+          "name": "UI/UX Design",
+          "slug": "ui-ux",
+          "shortDesc": "User-centered design that delights and converts.",
+          "longDesc": "Create exceptional user experiences with our UI/UX design services. We focus on user research, wireframing, prototyping, and visual design to create interfaces that users love.",
+          "icon": "palette",
+          "features": [
+            "User Research & Analysis",
+            "Wireframing & Prototyping",
+            "Visual Design",
+            "Interaction Design",
+            "Usability Testing",
+            "Design Systems"
+          ],
+          "benefits": [
+            "Better user engagement",
+            "Higher conversion rates",
+            "Reduced development costs",
+            "Brand consistency"
+          ],
+          "technologies": ["Figma", "Adobe XD", "Sketch", "InVision", "Miro"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹1,50,000",
+            "duration": "4-6 weeks"
+          }
+        },
+        {
+          "id": "logo-branding",
+          "name": "Logo & Branding",
+          "slug": "logo-designing",
+          "shortDesc": "Memorable brand identities that make lasting impressions.",
+          "longDesc": "Build a strong brand identity with our logo and branding services. We create visual identities that resonate with your target audience and stand out in the market.",
+          "icon": "award",
+          "features": [
+            "Logo Design",
+            "Brand Guidelines",
+            "Color Palette Creation",
+            "Typography Selection",
+            "Brand Collateral Design",
+            "Social Media Assets"
+          ],
+          "benefits": [
+            "Strong brand identity",
+            "Professional image",
+            "Market differentiation",
+            "Consistent branding"
+          ],
+          "technologies": ["Adobe Illustrator", "Photoshop", "Figma", "After Effects"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹50,000",
+            "duration": "2-3 weeks"
+          }
+        }
+      ]
+    }
+  ],
+  "featured": [
+    "generative-ai.ai-strategy",
+    "web-development.fullstack-development",
+    "mobile-development.react-native",
+    "cloud-services.aws-solutions"
+  ]
+}

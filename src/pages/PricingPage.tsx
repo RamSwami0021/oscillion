@@ -149,18 +149,18 @@ const PricingPage = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-12 sm:mb-16 lg:mb-20">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
+              className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
-                <stat.icon className="w-6 h-6 text-white" />
+              <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-3 sm:mb-4`}>
+                <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
+              <div className="text-2xl sm:text-3xl font-bold text-black mb-1">{stat.value}</div>
+              <div className="text-xs sm:text-sm text-gray-600">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -193,7 +193,7 @@ const PricingPage = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-20">
           {plans.map((plan, index) => (
             <div
               key={index}

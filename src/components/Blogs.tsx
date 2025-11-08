@@ -6,18 +6,21 @@ const Blogs = () => {
   const featuredBlogs = blogsData.featured.slice(0, 3);
 
   return (
-    <section id="blogs" className="py-24 bg-white">
+    <section id="blogs" className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fadeInUp">
-          <h2 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fadeInUp">
+          <div className="inline-block mb-4 px-4 py-2 bg-black/5 rounded-full">
+            <span className="text-sm font-semibold text-gray-700">Blog & Insights</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-4 leading-tight">
             Latest Insights
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed">
             Stay updated with the latest trends and insights in technology
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {featuredBlogs.map((post, index) => (
             <Link
               key={post.id}

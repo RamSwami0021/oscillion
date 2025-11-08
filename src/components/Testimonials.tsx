@@ -71,20 +71,23 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="testimonials" className="py-24 bg-gray-50">
+    <section id="testimonials" className="py-16 sm:py-20 lg:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fadeInUp">
-          <h2 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fadeInUp">
+          <div className="inline-block mb-4 px-4 py-2 bg-black/5 rounded-full">
+            <span className="text-sm font-semibold text-gray-700">Testimonials</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-4 leading-tight">
             What Our Clients Say
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed">
             Trusted by businesses worldwide for delivering exceptional results
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8 sm:p-12 relative animate-fadeIn">
-            <Quote className="w-16 h-16 text-gray-200 absolute top-8 left-8" />
+          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-12 relative animate-fadeIn">
+            <Quote className="w-12 h-12 sm:w-16 sm:h-16 text-gray-200 absolute top-6 left-6 sm:top-8 sm:left-8" />
 
             <div className="relative z-10">
               <div className="flex mb-6">
@@ -100,19 +103,19 @@ const Testimonials = () => {
                 ))}
               </div>
 
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
                 "{currentTestimonial.content}"
               </p>
 
               <div className="flex items-center">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold mr-3 sm:mr-4">
                   {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>
-                  <div className="font-semibold text-black text-lg">
+                  <div className="font-semibold text-black text-base sm:text-lg">
                     {currentTestimonial.name}
                   </div>
-                  <div className="text-gray-600">
+                  <div className="text-sm sm:text-base text-gray-600">
                     {currentTestimonial.role}, {currentTestimonial.company}
                   </div>
                 </div>

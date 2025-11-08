@@ -1,0 +1,76 @@
+{
+  "name": "Oscillion Software Services LLP",
+  "founded": 2024,
+  "tagline": "Building Premium Software Solutions",
+  "description": "Oscillion is a premium software development company specializing in cutting-edge technology solutions for businesses across India and internationally. We deliver world-class web applications, mobile solutions, AI implementations, and cloud services.",
+  "mission": "To empower businesses with innovative technology solutions that drive digital transformation and sustainable growth.",
+  "vision": "To be the most trusted technology partner for businesses worldwide, recognized for excellence and innovation.",
+  "values": [
+    {
+      "title": "Excellence",
+      "description": "We strive for excellence in every project, delivering premium quality software solutions."
+    },
+    {
+      "title": "Innovation",
+      "description": "We embrace cutting-edge technologies and innovative approaches to solve complex problems."
+    },
+    {
+      "title": "Integrity",
+      "description": "We maintain the highest standards of integrity in all our business relationships."
+    },
+    {
+      "title": "Client Success",
+      "description": "Our success is measured by the success of our clients."
+    }
+  ],
+  "stats": {
+    "yearsExperience": 1,
+    "projectsCompleted": 50,
+    "clientSatisfaction": 98,
+    "teamSize": 25,
+    "countriesServed": 5
+  },
+  "services": {
+    "primary": [
+      "Custom Software Development",
+      "Mobile App Development",
+      "Web Application Development",
+      "AI & ML Solutions",
+      "Cloud Services"
+    ],
+    "secondary": [
+      "UI/UX Design",
+      "Digital Marketing",
+      "DevOps Services",
+      "Quality Assurance",
+      "Technical Consulting"
+    ]
+  },
+  "markets": {
+    "indian": {
+      "description": "Serving businesses across major Indian cities including Mumbai, Delhi, Bangalore, Hyderabad, and Pune.",
+      "focus": "Startups, SMEs, and Enterprises"
+    },
+    "international": {
+      "description": "Delivering premium software solutions to clients in USA, UK, UAE, Singapore, and Australia.",
+      "focus": "Technology Companies, E-commerce, Healthcare, Finance"
+    }
+  },
+  "pricing": {
+    "model": "Flexible pricing based on project scope and requirements",
+    "currency": "INR (Indian Rupees)",
+    "description": "Our pricing is competitive and tailored to the Indian market while maintaining international quality standards.",
+    "options": [
+      "Fixed Price Projects",
+      "Time & Material",
+      "Dedicated Team",
+      "Retainer Model"
+    ]
+  },
+  "contact": {
+    "email": "info@oscillion.com",
+    "phone": "+91 999 999 9999",
+    "address": "Mumbai, Maharashtra, India",
+    "hours": "Mon-Sat: 9:00 AM - 7:00 PM IST"
+  }
+}

@@ -62,13 +62,16 @@ const Industries = () => {
   };
 
   return (
-    <section id="industries" className="py-24 bg-white">
+    <section id="industries" className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fadeInUp">
-          <h2 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fadeInUp">
+          <div className="inline-block mb-4 px-4 py-2 bg-black/5 rounded-full">
+            <span className="text-sm font-semibold text-gray-700">Industries We Serve</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-4 leading-tight">
             Industries We Cater
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed">
             Delivering specialized solutions across diverse industry verticals
           </p>
         </div>
@@ -99,22 +102,22 @@ const Industries = () => {
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-          <div className="p-6 bg-gray-50 rounded-xl">
-            <div className="text-3xl font-bold text-black mb-2">16+</div>
-            <div className="text-gray-600">Industries Served</div>
+        <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 text-center">
+          <div className="p-4 sm:p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="text-2xl sm:text-3xl font-bold text-black mb-2">16+</div>
+            <div className="text-xs sm:text-sm text-gray-600">Industries Served</div>
           </div>
-          <div className="p-6 bg-gray-50 rounded-xl">
-            <div className="text-3xl font-bold text-black mb-2">500+</div>
-            <div className="text-gray-600">Projects Completed</div>
+          <div className="p-4 sm:p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="text-2xl sm:text-3xl font-bold text-black mb-2">500+</div>
+            <div className="text-xs sm:text-sm text-gray-600">Projects Completed</div>
           </div>
-          <div className="p-6 bg-gray-50 rounded-xl">
-            <div className="text-3xl font-bold text-black mb-2">30+</div>
-            <div className="text-gray-600">Countries Reached</div>
+          <div className="p-4 sm:p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="text-2xl sm:text-3xl font-bold text-black mb-2">30+</div>
+            <div className="text-xs sm:text-sm text-gray-600">Countries Reached</div>
           </div>
-          <div className="p-6 bg-gray-50 rounded-xl">
-            <div className="text-3xl font-bold text-black mb-2">98%</div>
-            <div className="text-gray-600">Success Rate</div>
+          <div className="p-4 sm:p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="text-2xl sm:text-3xl font-bold text-black mb-2">98%</div>
+            <div className="text-xs sm:text-sm text-gray-600">Success Rate</div>
           </div>
         </div>
       </div>
