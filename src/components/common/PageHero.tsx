@@ -60,7 +60,7 @@ const PageHero = ({ badge, title, subtitle, icon, className = '' }: PageHeroProp
 
       {/* Bottom Wave */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg className="w-full h-8 sm:h-12" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <svg className="w-full h-8 sm:h-12 rotate-180" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M0,0 L0,60 Q300,120 600,60 T1200,60 L1200,0 Z" fill="white"></path>
         </svg>
       </div>
