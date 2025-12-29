@@ -168,8 +168,8 @@ const Navigation = () => {
           title: 'Healthcare & Education',
           items: [
             { label: 'Healthcare', href: '/industry/healthcare-education/healthcare', icon: <Heart className="w-4 h-4" /> },
-            { label: 'Education', href: '/industry/healthcare-education/education', icon: <GraduationCap className="w-4 h-4" /> },
-            { label: 'Pet Care', href: '/industry/healthcare-education/pet-care', icon: <PawPrint className="w-4 h-4" /> },
+            { label: 'Education', href: '/industry/education/education', icon: <GraduationCap className="w-4 h-4" /> },
+            { label: 'Pet Care', href: '/industry/lifestyle/pet-care', icon: <PawPrint className="w-4 h-4" /> },
           ],
         },
         {
@@ -183,10 +183,10 @@ const Navigation = () => {
         {
           title: 'Infrastructure',
           items: [
-            { label: 'Real Estate', href: '/industry/infrastructure/real-estate', icon: <Building2 className="w-4 h-4" /> },
+            { label: 'Real Estate', href: '/industry/real-estate/real-estate', icon: <Building2 className="w-4 h-4" /> },
             { label: 'Logistics', href: '/industry/infrastructure/logistics', icon: <Truck className="w-4 h-4" /> },
-            { label: 'Travel & Hospitality', href: '/industry/infrastructure/travel-hospitality', icon: <Plane className="w-4 h-4" /> },
-            { label: 'Agritech', href: '/industry/infrastructure/agritech', icon: <Sprout className="w-4 h-4" /> },
+            { label: 'Travel & Hospitality', href: '/industry/travel-hospitality/travel', icon: <Plane className="w-4 h-4" /> },
+            { label: 'Agritech', href: '/industry/agriculture/agritech', icon: <Sprout className="w-4 h-4" /> },
           ],
         },
         {

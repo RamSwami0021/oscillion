@@ -934,7 +934,8 @@
     "description": "Build secure, compliant fintech applications for banking, payments, and financial services.",
     "hero": {
       "heading": "Innovate Financial Services with Technology",
-      "description": "Create secure, scalable fintech solutions that transform banking, payments, wealth management, and financial operations."
+      "description": "Create secure, scalable fintech solutions that transform banking, payments, wealth management, and financial operations.",
+      "gradient": "from-emerald-700 to-teal-600"
     },
     "overview": {
       "title": "Leading Fintech Development Partner",
@@ -1012,7 +1013,8 @@
     "description": "Modernize insurance operations with digital platforms for policy management, claims processing, and customer engagement.",
     "hero": {
       "heading": "Transform Insurance with Digital Solutions",
-      "description": "Build modern insurance platforms that streamline underwriting, claims, policy management, and customer engagement."
+      "description": "Build modern insurance platforms that streamline underwriting, claims, policy management, and customer engagement.",
+      "gradient": "from-blue-800 to-cyan-700"
     },
     "overview": {
       "title": "Insurance Technology Expertise",
@@ -1088,7 +1090,8 @@
     "description": "Protect your business with comprehensive cybersecurity and data protection solutions.",
     "hero": {
       "heading": "Secure Your Digital Infrastructure",
-      "description": "Enterprise-grade cybersecurity solutions that protect against threats, breaches, and data loss while ensuring compliance."
+      "description": "Enterprise-grade cybersecurity solutions that protect against threats, breaches, and data loss while ensuring compliance.",
+      "gradient": "from-red-700 to-orange-600"
     },
     "overview": {
       "title": "Comprehensive Cybersecurity Solutions",
@@ -1166,7 +1169,8 @@
     "description": "Transform education with innovative learning platforms, student management systems, and digital classrooms.",
     "hero": {
       "heading": "Empower Learning with Technology",
-      "description": "Build engaging educational platforms that enhance learning experiences, streamline administration, and connect students with knowledge."
+      "description": "Build engaging educational platforms that enhance learning experiences, streamline administration, and connect students with knowledge.",
+      "gradient": "from-blue-700 to-sky-600"
     },
     "overview": {
       "title": "Education Technology Expertise",
@@ -1244,7 +1248,8 @@
     "description": "Build innovative pet care platforms for veterinary services, pet stores, grooming, and pet parent communities.",
     "hero": {
       "heading": "Modernize Pet Care with Digital Solutions",
-      "description": "Create comprehensive pet care platforms that connect pet parents with veterinarians, groomers, trainers, and pet services."
+      "description": "Create comprehensive pet care platforms that connect pet parents with veterinarians, groomers, trainers, and pet services.",
+      "gradient": "from-amber-600 to-orange-500"
     },
     "overview": {
       "title": "Pet Care Technology Partner",
@@ -1320,7 +1325,8 @@
     "description": "Transform real estate with property management platforms, listing portals, and virtual tour solutions.",
     "hero": {
       "heading": "Digitize Real Estate Operations",
-      "description": "Build modern real estate platforms that connect buyers, sellers, agents, and property managers with powerful digital tools."
+      "description": "Build modern real estate platforms that connect buyers, sellers, agents, and property managers with powerful digital tools.",
+      "gradient": "from-slate-700 to-gray-600"
     },
     "overview": {
       "title": "Real Estate Technology Expertise",
@@ -1397,7 +1403,8 @@
     "description": "Digitize logistics and streamline supply chains with data-driven technology.",
     "hero": {
       "heading": "Optimize Logistics Operations",
-      "description": "Build intelligent logistics software that improves delivery efficiency, reduces costs, and provides real-time visibility across your supply chain."
+      "description": "Build intelligent logistics software that improves delivery efficiency, reduces costs, and provides real-time visibility across your supply chain.",
+      "gradient": "from-orange-600 to-yellow-500"
     },
     "overview": {
       "title": "Logistics Technology Solutions",
@@ -1475,7 +1482,8 @@
     "description": "Transform travel and hospitality with booking platforms, guest management systems, and personalized experiences.",
     "hero": {
       "heading": "Elevate Travel & Hospitality Experiences",
-      "description": "Build innovative travel platforms that streamline bookings, enhance guest experiences, and drive operational efficiency."
+      "description": "Build innovative travel platforms that streamline bookings, enhance guest experiences, and drive operational efficiency.",
+      "gradient": "from-sky-600 to-blue-500"
     },
     "overview": {
       "title": "Travel Technology Expertise",
@@ -1551,7 +1559,8 @@
     "description": "Modernize agriculture with smart farming platforms, crop management systems, and supply chain solutions.",
     "hero": {
       "heading": "Transform Agriculture with Technology",
-      "description": "Build innovative agritech solutions that increase yields, reduce costs, and promote sustainable farming practices."
+      "description": "Build innovative agritech solutions that increase yields, reduce costs, and promote sustainable farming practices.",
+      "gradient": "from-green-700 to-lime-600"
     },
     "overview": {
       "title": "Agritech Innovation Partner",
@@ -1628,7 +1637,8 @@
     "description": "Deliver engaging fan experiences and event management tools for the modern era.",
     "hero": {
       "heading": "Empowering Sports and Events Digitally",
-      "description": "Create innovative platforms for ticketing, fan engagement, event management, and sports analytics."
+      "description": "Create innovative platforms for ticketing, fan engagement, event management, and sports analytics.",
+      "gradient": "from-rose-700 to-pink-600"
     },
     "overview": {
       "title": "Sports & Events Technology",
