@@ -243,7 +243,7 @@ const DynamicProductPage = () => {
                   className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border border-gray-100 animate-fadeInUp"
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  <div className={`w-16 h-16 bg-gradient-to-br ${product.hero.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
+                  <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-black rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-black mb-3 group-hover:text-gray-700 transition-colors">{feature.title}</h3>
@@ -338,7 +338,7 @@ const DynamicProductPage = () => {
                   <div className="hidden md:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-gray-300 to-gray-200 -z-10"></div>
                 )}
                 <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${product.hero.gradient} rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold text-white shadow-lg`}>
+                  <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-black rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold text-white shadow-lg">
                     {index + 1}
                   </div>
                   <h3 className="text-xl font-bold text-black mb-3">{step.title}</h3>
@@ -587,7 +587,7 @@ const DynamicProductPage = () => {
                 key={index}
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-black rounded-2xl flex items-center justify-center mb-6 mx-auto">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-black mb-3">{feature.title}</h3>
