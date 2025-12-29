@@ -1011,6 +1011,161 @@
           }
         }
       ]
+    },
+    {
+      "id": "digital-marketing",
+      "name": "Digital Marketing",
+      "slug": "digital-marketing",
+      "icon": "trending-up",
+      "description": "Data-driven digital marketing strategies to grow your online presence.",
+      "color": "from-gray-800 to-gray-900",
+      "services": [
+        {
+          "id": "seo",
+          "name": "Search Engine Optimization (SEO)",
+          "slug": "seo",
+          "shortDesc": "Boost your online visibility and rank higher on search engines.",
+          "longDesc": "Improve your website's search engine rankings with our comprehensive SEO services. We use proven strategies including on-page optimization, technical SEO, content optimization, and link building to drive organic traffic and increase your online visibility.",
+          "icon": "search",
+          "features": [
+            "On-Page Optimization",
+            "Technical SEO Audit",
+            "Keyword Research & Strategy",
+            "Content Optimization",
+            "Off-Page SEO & Link Building",
+            "Local SEO",
+            "SEO Analytics & Reporting"
+          ],
+          "benefits": [
+            "Higher search rankings",
+            "Increased organic traffic",
+            "Better ROI",
+            "Enhanced brand visibility"
+          ],
+          "technologies": ["Google Analytics", "SEMrush", "Ahrefs", "Google Search Console", "Screaming Frog"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹25,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "smo",
+          "name": "Social Media Optimization (SMO)",
+          "slug": "smo",
+          "shortDesc": "Engage audiences and grow your social media presence.",
+          "longDesc": "Build a strong and active social presence across all major platforms. Our SMO services include strategy development, content creation, community management, and performance tracking to maximize engagement and grow your audience.",
+          "icon": "share-2",
+          "features": [
+            "Social Media Strategy",
+            "Content Creation & Curation",
+            "Community Management",
+            "Profile Optimization",
+            "Engagement Analytics",
+            "Cross-Platform Management",
+            "Social Media Advertising"
+          ],
+          "benefits": [
+            "Increased brand awareness",
+            "Audience growth",
+            "Improved engagement",
+            "Better customer relationships"
+          ],
+          "technologies": ["Facebook", "Instagram", "LinkedIn", "Twitter", "Buffer", "Hootsuite"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹20,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "ppc",
+          "name": "Pay Per Click (PPC)",
+          "slug": "ppc",
+          "shortDesc": "Drive instant traffic and leads through paid advertising.",
+          "longDesc": "Maximize your ROI with targeted PPC campaigns. Our certified experts manage Google Ads, Facebook Ads, and other paid advertising platforms to drive qualified traffic, generate leads, and increase conversions while optimizing your ad spend.",
+          "icon": "zap",
+          "features": [
+            "Campaign Strategy & Setup",
+            "Keyword Research & Bidding",
+            "Ad Copy Creation",
+            "Landing Page Optimization",
+            "A/B Testing",
+            "Conversion Tracking",
+            "Performance Analytics"
+          ],
+          "benefits": [
+            "Instant lead generation",
+            "Precise audience targeting",
+            "Scalable ad spend",
+            "Measurable ROI"
+          ],
+          "technologies": ["Google Ads", "Facebook Ads", "LinkedIn Ads", "Google Tag Manager", "Analytics"],
+          "pricing": {
+            "model": "Monthly Retainer + Ad Spend",
+            "starting": "₹30,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "email-marketing",
+          "name": "Email Marketing",
+          "slug": "email-marketing",
+          "shortDesc": "Personalized email campaigns that convert leads into customers.",
+          "longDesc": "Engage customers through impactful and automated email strategies. Our email marketing services include campaign design, automation setup, list management, and performance optimization to nurture leads and drive conversions.",
+          "icon": "mail",
+          "features": [
+            "Email Campaign Strategy",
+            "Template Design & Development",
+            "Marketing Automation",
+            "List Management & Segmentation",
+            "A/B Testing",
+            "Analytics & Reporting",
+            "Drip Campaigns"
+          ],
+          "benefits": [
+            "Better lead nurturing",
+            "Increased open rates",
+            "Cost-effective marketing",
+            "Higher conversion rates"
+          ],
+          "technologies": ["Mailchimp", "SendGrid", "HubSpot", "ActiveCampaign", "Klaviyo"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹15,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "whatsapp-marketing",
+          "name": "WhatsApp Marketing",
+          "slug": "whatsapp-marketing",
+          "shortDesc": "Reach customers instantly with personalized WhatsApp campaigns.",
+          "longDesc": "Boost customer engagement using WhatsApp automation and marketing. Our services include bulk messaging, chatbot setup, automated responses, and campaign management to help you reach customers directly on their preferred messaging platform.",
+          "icon": "message-circle",
+          "features": [
+            "WhatsApp Business Setup",
+            "Bulk Messaging",
+            "Chatbot Development",
+            "Automated Responses",
+            "Broadcast Campaigns",
+            "Customer Support Integration",
+            "Analytics & Tracking"
+          ],
+          "benefits": [
+            "Direct customer engagement",
+            "High open rates",
+            "Instant communication",
+            "Better customer service"
+          ],
+          "technologies": ["WhatsApp Business API", "Twilio", "Gupshup", "MessageBird"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹18,000",
+            "duration": "Ongoing"
+          }
+        }
+      ]
     }
   ],
   "featured": [
