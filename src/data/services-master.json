@@ -953,6 +953,62 @@
             "starting": "₹50,000",
             "duration": "2-3 weeks"
           }
+        },
+        {
+          "id": "graphic-designing",
+          "name": "Graphic Designing",
+          "slug": "graphic-designing",
+          "shortDesc": "Visually stunning designs that communicate your brand story.",
+          "longDesc": "Create impactful visual content with our graphic design services. From marketing materials to social media graphics, we design eye-catching visuals that capture attention and communicate your message effectively.",
+          "icon": "image",
+          "features": [
+            "Marketing Collateral Design",
+            "Social Media Graphics",
+            "Brochures & Flyers",
+            "Poster & Banner Design",
+            "Infographics",
+            "Print & Digital Assets"
+          ],
+          "benefits": [
+            "Professional visual identity",
+            "Consistent brand messaging",
+            "Enhanced marketing materials",
+            "Increased engagement"
+          ],
+          "technologies": ["Adobe Photoshop", "Illustrator", "InDesign", "Canva", "Figma"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹40,000",
+            "duration": "2-4 weeks"
+          }
+        },
+        {
+          "id": "custom-designing",
+          "name": "Custom Designing",
+          "slug": "custom-designing",
+          "shortDesc": "Tailored design solutions to match unique business requirements.",
+          "longDesc": "Get personalized design solutions crafted specifically for your brand's unique needs. Our custom design service offers end-to-end creative solutions, from concept to final delivery, ensuring your vision comes to life perfectly.",
+          "icon": "layers",
+          "features": [
+            "Bespoke Design Solutions",
+            "Brand-Specific Creatives",
+            "Custom Illustrations",
+            "Packaging Design",
+            "Print & Digital Design",
+            "Collaborative Design Process"
+          ],
+          "benefits": [
+            "Fully customized outcomes",
+            "Brand-consistent designs",
+            "Unique visual identity",
+            "High creative flexibility"
+          ],
+          "technologies": ["Adobe Creative Suite", "Figma", "Sketch", "CorelDRAW", "Blender"],
+          "pricing": {
+            "model": "Project-based",
+            "starting": "₹60,000",
+            "duration": "3-5 weeks"
+          }
         }
       ]
     }
