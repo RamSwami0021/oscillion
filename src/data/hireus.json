@@ -256,5 +256,177 @@
       "100+ infrastructure projects",
       "Security & compliance experts"
     ]
+  },
+  "backend/python-developers": {
+    "slug": "backend/python-developers",
+    "title": "Hire Python Developers",
+    "name": "Python Developers",
+    "description": "Build powerful backend systems and data solutions with expert Python developers.",
+    "longDesc": "Leverage the versatility of Python with our expert developers. From web applications to data science, machine learning, and automation, we deliver scalable, efficient solutions using Python's extensive ecosystem and best practices.",
+    "hero": {
+      "heading": "Hire Expert Python Developers",
+      "description": "Build scalable applications, APIs, and data solutions with Python experts.",
+      "gradient": "from-blue-500 to-teal-600"
+    },
+    "icon": "server",
+    "features": [
+      "Django & Flask Development",
+      "RESTful API Design",
+      "Data Science & Analytics",
+      "Machine Learning Integration",
+      "Web Scraping & Automation",
+      "Microservices Architecture",
+      "Database Optimization",
+      "Cloud Integration"
+    ],
+    "benefits": [
+      "Versatile full-stack capabilities",
+      "Rapid development cycle",
+      "Scalable solutions",
+      "Data science expertise",
+      "Cost-effective development",
+      "Large ecosystem support"
+    ],
+    "technologies": ["Python", "Django", "Flask", "FastAPI", "PostgreSQL", "MongoDB", "Redis", "Celery", "Pandas", "NumPy"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹75,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "5+ years Python experience",
+      "Full-stack development",
+      "110+ projects delivered",
+      "ML/AI integration specialists"
+    ]
+  },
+  "backend/php-developers": {
+    "slug": "backend/php-developers",
+    "title": "Hire PHP Developers",
+    "name": "PHP Developers",
+    "description": "Create robust web applications with our experienced PHP developers.",
+    "longDesc": "Build dynamic, secure web applications with our PHP experts. Specializing in Laravel, WordPress, and custom PHP solutions, we deliver high-performance applications that power businesses worldwide with proven reliability and scalability.",
+    "hero": {
+      "heading": "Hire Professional PHP Developers",
+      "description": "Build dynamic web applications with PHP and Laravel experts.",
+      "gradient": "from-purple-500 to-blue-600"
+    },
+    "icon": "server",
+    "features": [
+      "Laravel Framework Mastery",
+      "WordPress Development",
+      "Custom CMS Solutions",
+      "E-commerce Platforms",
+      "API Development",
+      "Database Design",
+      "Payment Gateway Integration",
+      "Legacy Code Modernization"
+    ],
+    "benefits": [
+      "Proven stability and reliability",
+      "Large talent pool",
+      "Cost-effective solutions",
+      "Fast development",
+      "Extensive framework support",
+      "Strong community backing"
+    ],
+    "technologies": ["PHP", "Laravel", "Symfony", "WordPress", "MySQL", "PostgreSQL", "Redis", "Composer", "PHPUnit"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹65,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "6+ years PHP experience",
+      "130+ web applications built",
+      "Laravel certified developers",
+      "E-commerce specialists"
+    ]
+  },
+  "mobile/ios-developers": {
+    "slug": "mobile/ios-developers",
+    "title": "Hire iOS Developers",
+    "name": "iOS Developers",
+    "description": "Build stunning native iOS applications with our expert Swift developers.",
+    "longDesc": "Create exceptional iOS experiences with our certified Apple developers. Specializing in Swift, SwiftUI, and the complete iOS ecosystem, we build native applications that leverage the full power of iPhone and iPad platforms.",
+    "hero": {
+      "heading": "Hire Expert iOS Developers",
+      "description": "Build native iOS apps with Swift and SwiftUI experts.",
+      "gradient": "from-gray-700 to-gray-900"
+    },
+    "icon": "smartphone",
+    "features": [
+      "Swift & SwiftUI Development",
+      "iOS SDK Expertise",
+      "UIKit & Cocoa Touch",
+      "Core Data & Realm",
+      "App Store Optimization",
+      "Push Notifications",
+      "In-App Purchases",
+      "Apple Watch Integration"
+    ],
+    "benefits": [
+      "Native iOS performance",
+      "Premium user experience",
+      "App Store compliance",
+      "Latest iOS features",
+      "Optimized battery usage",
+      "Secure data handling"
+    ],
+    "technologies": ["Swift", "SwiftUI", "UIKit", "Xcode", "Core Data", "Realm", "Combine", "Alamofire", "Firebase"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹95,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "Apple certified developers",
+      "5+ years iOS experience",
+      "60+ apps in App Store",
+      "HIG compliance experts"
+    ]
+  },
+  "mobile/android-developers": {
+    "slug": "mobile/android-developers",
+    "title": "Hire Android Developers",
+    "name": "Android Developers",
+    "description": "Build powerful Android applications with our certified Kotlin developers.",
+    "longDesc": "Develop cutting-edge Android applications with our expert team. Specializing in Kotlin, Jetpack Compose, and modern Android architecture, we create high-performance apps that reach millions of users on the world's most popular mobile platform.",
+    "hero": {
+      "heading": "Hire Certified Android Developers",
+      "description": "Build native Android apps with Kotlin and Jetpack experts.",
+      "gradient": "from-green-600 to-teal-700"
+    },
+    "icon": "smartphone",
+    "features": [
+      "Kotlin & Java Development",
+      "Jetpack Compose UI",
+      "Material Design 3",
+      "MVVM Architecture",
+      "Room Database",
+      "Play Store Publishing",
+      "Firebase Integration",
+      "Wear OS Development"
+    ],
+    "benefits": [
+      "Maximum market reach",
+      "Native performance",
+      "Material Design standards",
+      "Multiple device support",
+      "Google Play compliance",
+      "Scalable architecture"
+    ],
+    "technologies": ["Kotlin", "Java", "Jetpack Compose", "Android SDK", "Room", "Retrofit", "Dagger/Hilt", "Coroutines", "Firebase"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹90,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "Google certified developers",
+      "5+ years Android experience",
+      "75+ apps on Play Store",
+      "Performance optimization experts"
+    ]
   }
 }
