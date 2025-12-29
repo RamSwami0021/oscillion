@@ -155,7 +155,7 @@ const DynamicProductPage = () => {
   ];
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       <PageHero
         badge={product.category.split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
         title={product.hero.heading}
