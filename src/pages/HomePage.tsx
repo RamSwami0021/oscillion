@@ -2,91 +2,67 @@ import { Link } from 'react-router-dom';
 import {
   Award, Shield, Zap, Code, Users, Globe, TrendingUp, Target,
   CheckCircle, Star, Rocket, Brain, Database, Cloud, Smartphone,
-  Lock, DollarSign, Clock, HeartHandshake, Briefcase,
-  BarChart, Layers, Settings, ArrowRight, Sparkles, Trophy,
-  Map, Building, GitBranch, Coffee, MessageCircle, Package,
-  Lightbulb, PieChart, Activity
+  Lock, Clock, HeartHandshake, Briefcase,
+  Layers, ArrowRight, Trophy,
+  Building, GitBranch,
+  Lightbulb, Activity, ChevronRight
 } from 'lucide-react';
 import { useEffect, useState, useRef } from 'react';
 import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
 import Industries from '../components/Industries';
 import Testimonials from '../components/Testimonials';
 import Blogs from '../components/Blogs';
 import ContactCTA from '../components/ContactCTA';
 import companyData from '../data/company.json';
+import servicesData from '../data/services-master.json';
 
 const HomePage = () => {
-  const [counters, setCounters] = useState({ projects: 0, clients: 0, satisfaction: 0, countries: 0 });
-  const [isCounterVisible, setIsCounterVisible] = useState(false);
-  const counterRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !isCounterVisible) {
-          setIsCounterVisible(true);
-          animateCounters();
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (counterRef.current) {
-      observer.observe(counterRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [isCounterVisible]);
-
-  const animateCounters = () => {
-    const duration = 2000;
-    const steps = 60;
-    const stepDuration = duration / steps;
-
-    let currentStep = 0;
-    const interval = setInterval(() => {
-      currentStep++;
-      const progress = currentStep / steps;
-
-      setCounters({
-        projects: Math.floor(progress * companyData.stats.projectsCompleted),
-        clients: Math.floor(progress * 100),
-        satisfaction: Math.floor(progress * companyData.stats.clientSatisfaction),
-        countries: Math.floor(progress * companyData.stats.countriesServed),
-      });
-
-      if (currentStep >= steps) {
-        clearInterval(interval);
-        setCounters({
-          projects: companyData.stats.projectsCompleted,
-          clients: 100,
-          satisfaction: companyData.stats.clientSatisfaction,
-          countries: companyData.stats.countriesServed,
-        });
-      }
-    }, stepDuration);
-  };
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   const technologies = [
-    { name: 'React', icon: Code },
-    { name: 'Node.js', icon: Database },
-    { name: 'Python', icon: Code },
-    { name: 'AWS', icon: Cloud },
-    { name: 'Docker', icon: Package },
-    { name: 'MongoDB', icon: Database },
-    { name: 'TypeScript', icon: Code },
-    { name: 'Flutter', icon: Smartphone },
+    { name: 'React', category: 'Frontend', icon: Code },
+    { name: 'Angular', category: 'Frontend', icon: Code },
+    { name: 'Vue.js', category: 'Frontend', icon: Code },
+    { name: 'Next.js', category: 'Frontend', icon: Code },
+    { name: 'TypeScript', category: 'Language', icon: Code },
+    { name: 'Node.js', category: 'Backend', icon: Database },
+    { name: 'Python', category: 'Backend', icon: Code },
+    { name: 'Django', category: 'Backend', icon: Code },
+    { name: 'Flask', category: 'Backend', icon: Code },
+    { name: 'Laravel', category: 'Backend', icon: Code },
+    { name: 'PHP', category: 'Backend', icon: Code },
+    { name: 'Express.js', category: 'Backend', icon: Database },
+    { name: 'MongoDB', category: 'Database', icon: Database },
+    { name: 'PostgreSQL', category: 'Database', icon: Database },
+    { name: 'MySQL', category: 'Database', icon: Database },
+    { name: 'Redis', category: 'Database', icon: Database },
+    { name: 'AWS', category: 'Cloud', icon: Cloud },
+    { name: 'Azure', category: 'Cloud', icon: Cloud },
+    { name: 'Google Cloud', category: 'Cloud', icon: Cloud },
+    { name: 'Docker', category: 'DevOps', icon: Cloud },
+    { name: 'Kubernetes', category: 'DevOps', icon: Cloud },
+    { name: 'Flutter', category: 'Mobile', icon: Smartphone },
+    { name: 'React Native', category: 'Mobile', icon: Smartphone },
+    { name: 'Swift', category: 'Mobile', icon: Smartphone },
+    { name: 'Kotlin', category: 'Mobile', icon: Smartphone },
+    { name: 'TensorFlow', category: 'AI/ML', icon: Brain },
+    { name: 'PyTorch', category: 'AI/ML', icon: Brain },
+    { name: 'OpenAI', category: 'AI/ML', icon: Brain },
+    { name: 'WordPress', category: 'CMS', icon: Globe },
+    { name: 'Shopify', category: 'E-Commerce', icon: Globe },
+    { name: 'Magento', category: 'E-Commerce', icon: Globe },
+    { name: 'Figma', category: 'Design', icon: Layers },
   ];
 
   const whyChooseUs = [
     { icon: Award, title: 'Award-Winning Team', description: 'Industry-recognized developers and designers delivering excellence' },
     { icon: Clock, title: 'On-Time Delivery', description: '95% of projects delivered on or ahead of schedule' },
     { icon: Shield, title: 'Enterprise Security', description: 'Bank-grade security protocols and compliance standards' },
-    { icon: DollarSign, title: 'Cost Effective', description: 'Transparent pricing with up to 40% cost savings' },
     { icon: HeartHandshake, title: 'Dedicated Support', description: '24/7 technical support and maintenance' },
     { icon: Target, title: 'Result Driven', description: 'Focus on measurable ROI and business outcomes' },
+    { icon: TrendingUp, title: 'Scalable Solutions', description: 'Build for today, scale for tomorrow' },
   ];
 
   const process = [
@@ -103,13 +79,6 @@ const HomePage = () => {
     { icon: Star, value: '4.9/5', label: 'Client Rating' },
     { icon: TrendingUp, value: '200%', label: 'Growth Rate' },
     { icon: Users, value: '25+', label: 'Expert Team' },
-  ];
-
-  const pricingModels = [
-    { icon: DollarSign, title: 'Fixed Price', description: 'Clearly defined scope and budget for your project', best: 'Small to medium projects' },
-    { icon: Clock, title: 'Time & Material', description: 'Flexible approach for evolving requirements', best: 'Long-term projects' },
-    { icon: Users, title: 'Dedicated Team', description: 'Your own remote team of experts', best: 'Enterprise solutions' },
-    { icon: Briefcase, title: 'Retainer Model', description: 'Ongoing support and maintenance', best: 'Continuous development' },
   ];
 
   const globalPresence = [
@@ -140,35 +109,93 @@ const HomePage = () => {
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  const allServices = servicesData.categories.flatMap(category =>
+    category.services.map(service => ({
+      ...service,
+      categoryName: category.name,
+      categorySlug: category.slug,
+      fullSlug: `/services/${category.slug}/${service.slug}`
+    }))
+  );
+
+  const handleScroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 400;
+      const newScrollLeft = direction === 'left'
+        ? scrollContainerRef.current.scrollLeft - scrollAmount
+        : scrollContainerRef.current.scrollLeft + scrollAmount;
+
+      scrollContainerRef.current.scrollTo({
+        left: newScrollLeft,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const updateScrollButtons = () => {
+    if (scrollContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
+
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.addEventListener('scroll', updateScrollButtons);
+      updateScrollButtons();
+      return () => container.removeEventListener('scroll', updateScrollButtons);
+    }
+  }, []);
+
   return (
     <div className="bg-white">
       <Hero />
 
-      {/* Stats Counter Section */}
-      <section ref={counterRef} className="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-800 -mt-1">
+      {/* About Us Image Section */}
+      <section className="py-20 bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center transform hover:scale-110 transition-all duration-300">
-              <div className="text-5xl lg:text-6xl font-bold text-white mb-2">{counters.projects}+</div>
-              <div className="text-gray-400 text-lg">Projects Completed</div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fadeInUp">
+              <h2 className="section-title text-left">About Oscillion</h2>
+              <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+                {companyData.description}
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Founded in {companyData.founded}, we've been at the forefront of software innovation, delivering cutting-edge solutions to businesses worldwide. Our team of expert developers, designers, and strategists work collaboratively to transform your vision into reality.
+              </p>
+              <div className="grid grid-cols-2 gap-6 mb-8">
+                <div className="p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200">
+                  <div className="text-4xl font-bold text-gray-900 mb-2">{companyData.stats.projectsCompleted}+</div>
+                  <div className="text-gray-600">Projects Delivered</div>
+                </div>
+                <div className="p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200">
+                  <div className="text-4xl font-bold text-gray-900 mb-2">{companyData.stats.clientSatisfaction}%</div>
+                  <div className="text-gray-600">Client Satisfaction</div>
+                </div>
+              </div>
+              <Link to="/company/about" className="btn-primary inline-flex items-center group">
+                Learn More About Us
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
-            <div className="text-center transform hover:scale-110 transition-all duration-300">
-              <div className="text-5xl lg:text-6xl font-bold text-white mb-2">{counters.clients}+</div>
-              <div className="text-gray-400 text-lg">Happy Clients</div>
-            </div>
-            <div className="text-center transform hover:scale-110 transition-all duration-300">
-              <div className="text-5xl lg:text-6xl font-bold text-white mb-2">{counters.satisfaction}%</div>
-              <div className="text-gray-400 text-lg">Satisfaction Rate</div>
-            </div>
-            <div className="text-center transform hover:scale-110 transition-all duration-300">
-              <div className="text-5xl lg:text-6xl font-bold text-white mb-2">{counters.countries}+</div>
-              <div className="text-gray-400 text-lg">Countries Served</div>
+            <div className="relative animate-fadeInUp animation-delay-200">
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img
+                  src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Team collaboration at Oscillion"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl flex flex-col items-center justify-center text-white shadow-xl">
+                <div className="text-5xl font-bold mb-2">{companyData.stats.yearsExperience}+</div>
+                <div className="text-sm text-gray-300">Years Excellence</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <About />
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -197,10 +224,66 @@ const HomePage = () => {
         </div>
       </section>
 
-      <Services />
+      {/* Our Services Scrollable Section */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16 animate-fadeInUp">
+            <h2 className="section-title">Our Services</h2>
+            <p className="section-subtitle max-w-3xl mx-auto">
+              Comprehensive software development services from AI solutions to mobile apps, cloud infrastructure, and digital marketing
+            </p>
+          </div>
+          <div className="relative">
+            {canScrollLeft && (
+              <button
+                onClick={() => handleScroll('left')}
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-gray-100 transition-colors"
+                aria-label="Scroll left"
+              >
+                <ChevronRight className="w-6 h-6 text-gray-900 rotate-180" />
+              </button>
+            )}
+            <div
+              ref={scrollContainerRef}
+              className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {allServices.map((service, index) => (
+                <Link
+                  key={index}
+                  to={service.fullSlug}
+                  className="group flex-shrink-0 w-80 p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 snap-start"
+                >
+                  <div className="mb-4">
+                    <span className="inline-block px-3 py-1 bg-gray-900 text-white text-xs font-semibold rounded-full mb-4">
+                      {service.categoryName}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-gray-700 transition-colors">
+                    {service.name}
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed line-clamp-3">{service.shortDesc}</p>
+                  <div className="flex items-center text-gray-900 font-semibold group-hover:translate-x-2 transition-transform">
+                    Learn More <ArrowRight className="w-4 h-4 ml-2" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+            {canScrollRight && (
+              <button
+                onClick={() => handleScroll('right')}
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-gray-100 transition-colors"
+                aria-label="Scroll right"
+              >
+                <ChevronRight className="w-6 h-6 text-gray-900" />
+              </button>
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* Technologies Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container-custom">
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="section-title">Technologies We Master</h2>
@@ -208,15 +291,16 @@ const HomePage = () => {
               Cutting-edge technology stack for scalable, secure, and high-performance software solutions
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {technologies.map((tech, index) => (
               <div
                 key={index}
-                className="group p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 animate-fadeInUp"
-                style={{ animationDelay: `${index * 50}ms` }}
+                className="group p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 animate-fadeInUp text-center"
+                style={{ animationDelay: `${index * 30}ms` }}
               >
-                <tech.icon className="w-12 h-12 text-gray-900 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <p className="text-center font-semibold text-gray-900">{tech.name}</p>
+                <tech.icon className="w-10 h-10 text-gray-900 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+                <p className="font-semibold text-gray-900 mb-1">{tech.name}</p>
+                <p className="text-xs text-gray-500">{tech.category}</p>
               </div>
             ))}
           </div>
@@ -226,7 +310,7 @@ const HomePage = () => {
       <Industries />
 
       {/* Our Process Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="section-title">Our Development Process</h2>
@@ -287,44 +371,8 @@ const HomePage = () => {
 
       <Testimonials />
 
-      {/* Pricing Models Section */}
-      <section className="py-20 bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-16 animate-fadeInUp">
-            <h2 className="section-title">Flexible Pricing Models</h2>
-            <p className="section-subtitle max-w-3xl mx-auto">
-              Choose the engagement model that best fits your project requirements and business goals
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {pricingModels.map((model, index) => (
-              <div
-                key={index}
-                className="group p-8 bg-gradient-to-b from-gray-50 to-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 animate-fadeInUp"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="w-14 h-14 bg-gradient-to-br from-gray-900 to-gray-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <model.icon className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">{model.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{model.description}</p>
-                <div className="pt-4 border-t border-gray-200">
-                  <p className="text-sm text-gray-500">Best for: <span className="font-semibold text-gray-900">{model.best}</span></p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link to="/pricing" className="btn-primary inline-flex items-center group">
-              View Detailed Pricing
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Global Presence Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="section-title">Global Presence</h2>
@@ -507,7 +555,7 @@ const HomePage = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/faq" className="btn-primary inline-flex items-center group">
+            <Link to="/resources/faqs" className="btn-primary inline-flex items-center group">
               View All FAQs
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -570,7 +618,7 @@ const HomePage = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/case-studies" className="btn-primary inline-flex items-center group">
+            <Link to="/resources/case-studies" className="btn-primary inline-flex items-center group">
               View Case Studies
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
