@@ -49,7 +49,6 @@ const Navigation = () => {
           title: 'About',
           items: [
             { label: 'About Us', href: '/company/about' },
-            { label: 'Leadership', href: '/company/leadership-team' },
             { label: 'Our Values', href: '/company/core-values' },
             { label: 'Careers', href: '/company/careers' },
             { label: 'Testimonials', href: '/company/client-testimonials' },
@@ -70,7 +69,6 @@ const Navigation = () => {
             { label: 'Contact Us', href: '/contact' },
             { label: 'Blog', href: '/blog' },
             { label: 'Partners', href: '/company/strategic-partners' },
-            { label: 'Press & Media', href: '/company/press-media-center' },
           ],
         },
       ],
@@ -264,7 +262,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
              <img
-  src="./logo.png"
+  src="/logo.png"
   alt="Oscillion Software"
   className="w-auto logo-mobile"
 />

@@ -20,10 +20,8 @@ import PricingPage from './pages/PricingPage';
 
 import RequestQuotePage from './pages/RequestQuotePage';
 import TrainingPage from './pages/TrainingPage';
-import LeadershipPage from './pages/LeadershipPage';
 import CoreValuesPage from './pages/CoreValuesPage';
 import PartnersPage from './pages/PartnersPage';
-import PressMediaPage from './pages/PressMediaPage';
 import LocationsPage from './pages/LocationsPage';
 import EngagementModelsPage from './pages/EngagementModelsPage';
 import ConfidentialityPage from './pages/ConfidentialityPage';
@@ -53,12 +51,10 @@ function App() {
 
           {/* === COMPANY === */}
           <Route path="/company/about" element={<AboutPage />} />
-          <Route path="/company/leadership-team" element={<LeadershipPage />} />
           <Route path="/company/core-values" element={<CoreValuesPage />} />
           <Route path="/company/careers" element={<CareerPage />} />
           <Route path="/company/client-testimonials" element={<TestimonialPage />} />
           <Route path="/company/strategic-partners" element={<PartnersPage />} />
-          <Route path="/company/press-media-center" element={<PressMediaPage />} />
           <Route path="/company/locations" element={<LocationsPage />} />
 
           {/* === SERVICES === */}
