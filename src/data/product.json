@@ -1,111 +1,836 @@
 {
-  "cyber-security": {
-    "slug": "cyber-security",
-    "title": "Cyber Security Solutions",
-    "description": "Comprehensive security solutions to protect your business from evolving cyber threats",
+  "business-solutions/hrms": {
+    "slug": "business-solutions/hrms",
+    "category": "business-solutions",
+    "title": "HRMS - Human Resource Management System",
+    "name": "HRMS",
+    "tagline": "Complete HR Solution for Modern Businesses",
+    "description": "Streamline your entire HR operations with our comprehensive HRMS platform. From recruitment to retirement, manage everything in one place.",
+    "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
     "hero": {
-      "heading": "Cyber Security Solutions",
-      "description": "Comprehensive security solutions to protect your business from evolving cyber threats",
-      "gradient": "from-gray-900 via-black to-gray-800"
+      "heading": "Transform Your HR Operations",
+      "description": "A complete Human Resource Management System designed to automate HR processes, enhance employee experience, and boost organizational productivity.",
+      "gradient": "from-blue-600 to-cyan-600",
+      "stats": [
+        { "value": "10K+", "label": "Companies Using" },
+        { "value": "500K+", "label": "Employees Managed" },
+        { "value": "60%", "label": "Time Saved" },
+        { "value": "99.9%", "label": "Uptime" }
+      ]
+    },
+    "overview": {
+      "title": "All-in-One HR Management Platform",
+      "description": "Our HRMS is a comprehensive cloud-based solution that transforms how you manage your workforce. From payroll processing to performance management, everything is automated and accessible from anywhere.",
+      "highlights": [
+        "Employee self-service portal",
+        "Automated payroll processing",
+        "Leave and attendance management",
+        "Performance appraisal system",
+        "Recruitment and onboarding",
+        "Training and development tracking"
+      ]
     },
     "features": [
       {
-        "title": "Firewalls Solutions",
-        "description": "Advanced firewall protection for your network infrastructure",
-        "icon": "shield"
+        "title": "Employee Management",
+        "description": "Centralized employee database with complete profile management, document storage, and organizational hierarchy visualization.",
+        "icon": "users"
       },
       {
-        "title": "Security Proxy Solutions",
-        "description": "Secure proxy solutions for enhanced network security",
-        "icon": "lock"
+        "title": "Payroll Automation",
+        "description": "Automated salary calculation, tax deductions, statutory compliance, and direct deposit with detailed payslips.",
+        "icon": "dollar-sign"
       },
       {
-        "title": "Endpoint Security",
-        "description": "Protect all endpoints in your organization",
-        "icon": "laptop"
+        "title": "Attendance Tracking",
+        "description": "Biometric integration, GPS tracking, shift management, and real-time attendance monitoring.",
+        "icon": "clock"
       },
       {
-        "title": "Data Loss Prevention",
-        "description": "Prevent sensitive data leaks and ensure compliance",
-        "icon": "file-lock"
+        "title": "Leave Management",
+        "description": "Online leave applications, approval workflows, leave balance tracking, and calendar integration.",
+        "icon": "calendar"
+      },
+      {
+        "title": "Performance Management",
+        "description": "Goal setting, KPI tracking, 360-degree feedback, and automated performance review cycles.",
+        "icon": "target"
+      },
+      {
+        "title": "Recruitment Module",
+        "description": "Job posting, applicant tracking, interview scheduling, and candidate evaluation workflows.",
+        "icon": "briefcase"
+      },
+      {
+        "title": "Training & Development",
+        "description": "Learning management, skill gap analysis, training calendar, and certification tracking.",
+        "icon": "book-open"
+      },
+      {
+        "title": "Reports & Analytics",
+        "description": "Real-time dashboards, custom reports, workforce analytics, and compliance reporting.",
+        "icon": "bar-chart"
       }
     ],
+    "technologies": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "AWS",
+      "Docker",
+      "TypeScript",
+      "GraphQL"
+    ],
     "benefits": [
-      "24/7 security monitoring and threat detection",
-      "Compliance with industry standards and regulations",
-      "Reduced risk of data breaches and cyber attacks",
-      "Expert security team at your service"
-    ]
+      "Reduce HR administrative time by 60%",
+      "Eliminate payroll errors and ensure compliance",
+      "Improve employee engagement and satisfaction",
+      "Make data-driven HR decisions",
+      "Seamless integration with existing systems",
+      "Mobile access for employees and managers",
+      "Automated compliance and reporting",
+      "Scalable for growing organizations"
+    ],
+    "pricing": {
+      "model": "Per Employee/Month",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$5",
+          "description": "Perfect for small teams",
+          "features": [
+            "Up to 50 employees",
+            "Basic employee management",
+            "Attendance tracking",
+            "Leave management",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$8",
+          "description": "For growing businesses",
+          "features": [
+            "Up to 200 employees",
+            "All Starter features",
+            "Payroll automation",
+            "Performance management",
+            "Priority support",
+            "Custom reports"
+          ],
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "description": "For large organizations",
+          "features": [
+            "Unlimited employees",
+            "All Professional features",
+            "Advanced analytics",
+            "API access",
+            "Dedicated account manager",
+            "Custom integrations",
+            "On-premise deployment option"
+          ]
+        }
+      ]
+    },
+    "screenshots": [
+      {
+        "url": "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg",
+        "title": "Employee Dashboard",
+        "description": "Intuitive employee self-service portal"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg",
+        "title": "Attendance Management",
+        "description": "Real-time attendance tracking and reporting"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg",
+        "title": "Payroll Processing",
+        "description": "Automated payroll with compliance"
+      },
+      {
+        "url": "https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg",
+        "title": "Analytics Dashboard",
+        "description": "Comprehensive HR analytics and insights"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your HR Operations?",
+      "description": "Join thousands of companies using our HRMS to streamline their workforce management.",
+      "primaryButton": "Start Free Trial",
+      "secondaryButton": "Schedule Demo"
+    }
   },
-  "generative-ai": {
-    "slug": "generative-ai",
-    "title": "Generative AI Solutions",
-    "description": "Transform your business with cutting-edge AI technology and intelligent automation",
+  "education/school-management": {
+    "slug": "education/school-management",
+    "category": "education",
+    "title": "School Management System",
+    "name": "School Management",
+    "tagline": "Complete School Administration Solution",
+    "description": "Transform your educational institution with our comprehensive school management system. Manage students, staff, academics, and administration seamlessly.",
+    "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg",
     "hero": {
-      "heading": "Generative AI Solutions",
-      "description": "Transform your business with cutting-edge AI technology and intelligent automation",
-      "gradient": "from-blue-900 via-black to-blue-800"
+      "heading": "Digitize Your School Operations",
+      "description": "An all-in-one school management platform that connects students, teachers, parents, and administrators with powerful tools for modern education.",
+      "gradient": "from-purple-600 to-indigo-600",
+      "stats": [
+        { "value": "5K+", "label": "Schools" },
+        { "value": "2M+", "label": "Students" },
+        { "value": "95%", "label": "Parent Satisfaction" },
+        { "value": "50%", "label": "Admin Time Saved" }
+      ]
+    },
+    "overview": {
+      "title": "Complete School Management Platform",
+      "description": "Our school management system is designed to simplify every aspect of school administration, from admissions to examinations, with powerful features for students, teachers, parents, and administrators.",
+      "highlights": [
+        "Student information system",
+        "Online admission management",
+        "Attendance and timetable",
+        "Examination and grading",
+        "Fee management and billing",
+        "Parent-teacher communication"
+      ]
     },
     "features": [
       {
-        "title": "AI Strategy Consulting",
-        "description": "Expert guidance to develop and implement your AI strategy",
-        "icon": "lightbulb"
+        "title": "Student Management",
+        "description": "Complete student lifecycle management including admission, enrollment, academic records, and alumni tracking.",
+        "icon": "user"
       },
       {
-        "title": "AI Development",
-        "description": "Custom AI solutions tailored to your business needs",
-        "icon": "code"
+        "title": "Attendance System",
+        "description": "Digital attendance tracking with biometric integration, SMS notifications, and automated reports.",
+        "icon": "check-circle"
       },
       {
-        "title": "AI Integration",
-        "description": "Seamlessly integrate AI into your existing systems",
-        "icon": "plug"
+        "title": "Timetable Management",
+        "description": "Automated timetable generation, teacher scheduling, room allocation, and conflict resolution.",
+        "icon": "calendar"
       },
       {
-        "title": "AI Training and Support",
-        "description": "Comprehensive training programs for your team",
+        "title": "Examination & Grading",
+        "description": "Online exam scheduling, grade entry, report card generation, and result analysis.",
+        "icon": "file-text"
+      },
+      {
+        "title": "Fee Management",
+        "description": "Online fee collection, payment gateway integration, receipt generation, and financial reporting.",
+        "icon": "credit-card"
+      },
+      {
+        "title": "Library Management",
+        "description": "Book cataloging, issue/return tracking, fine management, and digital library resources.",
+        "icon": "book"
+      },
+      {
+        "title": "Transport Management",
+        "description": "Route planning, GPS tracking, driver management, and parent notifications.",
+        "icon": "truck"
+      },
+      {
+        "title": "Parent Portal",
+        "description": "Real-time updates on attendance, grades, assignments, and direct communication with teachers.",
         "icon": "users"
       }
     ],
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "AWS",
+      "Socket.io",
+      "TypeScript",
+      "Redis"
+    ],
     "benefits": [
-      "Increased productivity and efficiency",
-      "Automated repetitive tasks",
-      "Data-driven insights and decision making",
-      "Competitive advantage in your industry"
-    ]
+      "Paperless school administration",
+      "Real-time parent engagement",
+      "Improved academic performance tracking",
+      "Automated fee collection and accounting",
+      "Enhanced teacher productivity",
+      "Better communication between stakeholders",
+      "Data-driven decision making",
+      "Mobile app for parents and students"
+    ],
+    "pricing": {
+      "model": "Per Student/Year",
+      "plans": [
+        {
+          "name": "Basic",
+          "price": "$10",
+          "description": "For small schools",
+          "features": [
+            "Up to 500 students",
+            "Student & staff management",
+            "Attendance tracking",
+            "Basic reporting",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Premium",
+          "price": "$15",
+          "description": "For medium schools",
+          "features": [
+            "Up to 2000 students",
+            "All Basic features",
+            "Examination management",
+            "Fee management",
+            "Parent portal",
+            "Mobile apps",
+            "Priority support"
+          ],
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "description": "For large institutions",
+          "features": [
+            "Unlimited students",
+            "All Premium features",
+            "Multi-campus support",
+            "Custom modules",
+            "API access",
+            "Dedicated support",
+            "On-premise option"
+          ]
+        }
+      ]
+    },
+    "screenshots": [
+      {
+        "url": "https://images.pexels.com/photos/5905888/pexels-photo-5905888.jpeg",
+        "title": "Student Dashboard",
+        "description": "Comprehensive student information view"
+      },
+      {
+        "url": "https://images.pexels.com/photos/8500285/pexels-photo-8500285.jpeg",
+        "title": "Attendance Tracking",
+        "description": "Real-time attendance management"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5905492/pexels-photo-5905492.jpeg",
+        "title": "Examination Management",
+        "description": "Complete exam and grading system"
+      },
+      {
+        "url": "https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg",
+        "title": "Parent Portal",
+        "description": "Real-time updates for parents"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Modernize Your School?",
+      "description": "Join thousands of schools worldwide using our platform to enhance education delivery.",
+      "primaryButton": "Request Demo",
+      "secondaryButton": "View Pricing"
+    }
   },
-  "cloud-services": {
-    "slug": "cloud-services",
-    "title": "Cloud Services",
-    "description": "Scalable cloud infrastructure solutions for modern businesses",
+  "retail/ecommerce-platform": {
+    "slug": "retail/ecommerce-platform",
+    "category": "retail",
+    "title": "Ecommerce Platform",
+    "name": "Ecommerce Platform",
+    "tagline": "Build Your Online Empire",
+    "description": "Launch and scale your online store with our powerful ecommerce platform. Everything you need to sell online, from products to payments.",
+    "image": "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg",
     "hero": {
-      "heading": "Cloud Services",
-      "description": "Scalable cloud infrastructure solutions for modern businesses",
-      "gradient": "from-green-900 via-black to-green-800"
+      "heading": "Powerful Ecommerce Made Simple",
+      "description": "Launch your online store in minutes with our feature-rich ecommerce platform. Built for growth, designed for success.",
+      "gradient": "from-orange-600 to-red-600",
+      "stats": [
+        { "value": "50K+", "label": "Active Stores" },
+        { "value": "$2B+", "label": "GMV Processed" },
+        { "value": "99.99%", "label": "Uptime" },
+        { "value": "150+", "label": "Countries" }
+      ]
+    },
+    "overview": {
+      "title": "Complete Ecommerce Solution",
+      "description": "Our ecommerce platform provides everything you need to start, run, and grow your online business. From beautiful storefronts to powerful backend tools, we've got you covered.",
+      "highlights": [
+        "Drag-and-drop store builder",
+        "Multi-vendor marketplace support",
+        "Integrated payment gateway",
+        "Inventory management",
+        "Marketing and SEO tools",
+        "Mobile-responsive design"
+      ]
     },
     "features": [
       {
-        "title": "Amazon Web Services",
-        "description": "Leverage the power of AWS for your cloud infrastructure",
-        "icon": "cloud"
+        "title": "Store Builder",
+        "description": "Easy-to-use drag-and-drop builder with 100+ professional themes. No coding required.",
+        "icon": "layout"
       },
       {
-        "title": "Microsoft Azure",
-        "description": "Enterprise-grade cloud solutions with Microsoft Azure",
-        "icon": "server"
+        "title": "Product Management",
+        "description": "Unlimited products, variants, digital goods, bulk import/export, and advanced categorization.",
+        "icon": "package"
       },
       {
-        "title": "Google Cloud Platform",
-        "description": "Build and scale with Google Cloud infrastructure",
+        "title": "Payment Gateway",
+        "description": "Accept payments via credit cards, digital wallets, COD, and 50+ payment methods globally.",
+        "icon": "credit-card"
+      },
+      {
+        "title": "Order Management",
+        "description": "Automated order processing, shipment tracking, return management, and customer notifications.",
+        "icon": "shopping-cart"
+      },
+      {
+        "title": "Inventory Control",
+        "description": "Real-time stock tracking, low stock alerts, multi-warehouse support, and automatic reordering.",
         "icon": "database"
+      },
+      {
+        "title": "Marketing Tools",
+        "description": "Email campaigns, discount coupons, loyalty programs, abandoned cart recovery, and SEO optimization.",
+        "icon": "megaphone"
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "Real-time sales reports, customer insights, conversion tracking, and revenue analytics.",
+        "icon": "bar-chart"
+      },
+      {
+        "title": "Multi-vendor Support",
+        "description": "Build marketplaces with vendor onboarding, commission management, and vendor dashboards.",
+        "icon": "users"
       }
     ],
+    "technologies": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "Stripe",
+      "AWS",
+      "Elasticsearch"
+    ],
     "benefits": [
-      "Scalable infrastructure that grows with your business",
-      "Cost-effective pay-as-you-go pricing",
-      "High availability and disaster recovery",
-      "Expert cloud architecture and migration support"
-    ]
+      "Launch your store in under 30 minutes",
+      "Scale to millions of products and orders",
+      "Mobile-first responsive design",
+      "Built-in SEO and marketing tools",
+      "Secure PCI-DSS compliant payments",
+      "24/7 automated customer support",
+      "Integration with 100+ apps",
+      "Multi-currency and multi-language"
+    ],
+    "pricing": {
+      "model": "Monthly Subscription",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$29",
+          "description": "For new businesses",
+          "features": [
+            "Up to 100 products",
+            "2% transaction fee",
+            "Basic themes",
+            "SSL certificate",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Growth",
+          "price": "$79",
+          "description": "For growing stores",
+          "features": [
+            "Unlimited products",
+            "1% transaction fee",
+            "Premium themes",
+            "Advanced analytics",
+            "Marketing tools",
+            "Priority support"
+          ],
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$299",
+          "description": "For large businesses",
+          "features": [
+            "Everything in Growth",
+            "No transaction fees",
+            "Custom development",
+            "API access",
+            "Dedicated manager",
+            "Multi-vendor support"
+          ]
+        }
+      ]
+    },
+    "screenshots": [
+      {
+        "url": "https://images.pexels.com/photos/3182759/pexels-photo-3182759.jpeg",
+        "title": "Store Builder",
+        "description": "Drag-and-drop store customization"
+      },
+      {
+        "url": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
+        "title": "Product Management",
+        "description": "Easy product catalog management"
+      },
+      {
+        "url": "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg",
+        "title": "Order Dashboard",
+        "description": "Real-time order tracking and management"
+      },
+      {
+        "url": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg",
+        "title": "Analytics",
+        "description": "Comprehensive sales analytics"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Start Selling Online?",
+      "description": "Join 50,000+ businesses already selling successfully on our platform.",
+      "primaryButton": "Start Free Trial",
+      "secondaryButton": "See Demo Store"
+    }
+  },
+  "education/certificate-management": {
+    "slug": "education/certificate-management",
+    "category": "education",
+    "title": "Certificate Management System",
+    "name": "Certificate Management",
+    "tagline": "Digital Certificates Made Easy",
+    "description": "Issue, verify, and manage digital certificates with blockchain-backed authenticity. Perfect for educational institutions and corporate training.",
+    "image": "https://images.pexels.com/photos/6684587/pexels-photo-6684587.jpeg",
+    "hero": {
+      "heading": "Secure Digital Certificate Platform",
+      "description": "Issue tamper-proof digital certificates with blockchain verification. Automate certificate generation, distribution, and lifetime verification.",
+      "gradient": "from-green-600 to-teal-600",
+      "stats": [
+        { "value": "5M+", "label": "Certificates Issued" },
+        { "value": "100%", "label": "Tamper-Proof" },
+        { "value": "10K+", "label": "Organizations" },
+        { "value": "Instant", "label": "Verification" }
+      ]
+    },
+    "overview": {
+      "title": "Blockchain-Backed Certificate Solution",
+      "description": "Our certificate management system combines ease of use with enterprise-grade security. Issue professional certificates in bulk, enable instant verification, and eliminate fraud with blockchain technology.",
+      "highlights": [
+        "Blockchain-based verification",
+        "Bulk certificate generation",
+        "Custom certificate templates",
+        "QR code verification",
+        "Digital signature integration",
+        "API for third-party verification"
+      ]
+    },
+    "features": [
+      {
+        "title": "Certificate Design Studio",
+        "description": "Create beautiful certificates with drag-and-drop designer, custom templates, and branding options.",
+        "icon": "palette"
+      },
+      {
+        "title": "Bulk Issuance",
+        "description": "Generate and distribute thousands of certificates instantly with Excel/CSV import and automated email delivery.",
+        "icon": "zap"
+      },
+      {
+        "title": "Blockchain Verification",
+        "description": "Every certificate is recorded on blockchain for permanent, tamper-proof verification.",
+        "icon": "shield"
+      },
+      {
+        "title": "QR Code Integration",
+        "description": "Each certificate includes a unique QR code for instant mobile verification by anyone, anywhere.",
+        "icon": "qr-code"
+      },
+      {
+        "title": "Digital Signatures",
+        "description": "Add multiple digital signatures with authority verification and timestamp recording.",
+        "icon": "pen-tool"
+      },
+      {
+        "title": "Certificate Portal",
+        "description": "Recipients get a personalized portal to view, download, and share their certificates on social media.",
+        "icon": "user"
+      },
+      {
+        "title": "Analytics & Reports",
+        "description": "Track issuance, verification requests, and generate detailed reports for compliance.",
+        "icon": "bar-chart"
+      },
+      {
+        "title": "API Access",
+        "description": "Enable third-party verification with RESTful API for seamless integration with HR systems.",
+        "icon": "code"
+      }
+    ],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Ethereum",
+      "IPFS",
+      "PostgreSQL",
+      "Redis",
+      "AWS",
+      "PDF.js"
+    ],
+    "benefits": [
+      "Eliminate certificate fraud completely",
+      "Reduce administrative workload by 90%",
+      "Instant lifetime verification",
+      "Professional branded certificates",
+      "Eco-friendly paperless solution",
+      "Boost recipient engagement",
+      "Comply with digital standards",
+      "Reduce printing and distribution costs"
+    ],
+    "pricing": {
+      "model": "Per Certificate",
+      "plans": [
+        {
+          "name": "Basic",
+          "price": "$0.50",
+          "description": "For small programs",
+          "features": [
+            "Up to 1,000 certificates/year",
+            "Basic templates",
+            "Email delivery",
+            "QR verification",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$0.30",
+          "description": "For institutions",
+          "features": [
+            "Up to 10,000 certificates/year",
+            "All Basic features",
+            "Custom templates",
+            "Blockchain verification",
+            "Digital signatures",
+            "Priority support"
+          ],
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "description": "For large organizations",
+          "features": [
+            "Unlimited certificates",
+            "All Professional features",
+            "White-label solution",
+            "API access",
+            "Custom integrations",
+            "Dedicated support"
+          ]
+        }
+      ]
+    },
+    "screenshots": [
+      {
+        "url": "https://images.pexels.com/photos/6519095/pexels-photo-6519095.jpeg",
+        "title": "Certificate Designer",
+        "description": "Create stunning certificates easily"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6929052/pexels-photo-6929052.jpeg",
+        "title": "Bulk Issuance",
+        "description": "Issue thousands in minutes"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6684621/pexels-photo-6684621.jpeg",
+        "title": "Verification Portal",
+        "description": "Instant certificate verification"
+      },
+      {
+        "url": "https://images.pexels.com/photos/4476376/pexels-photo-4476376.jpeg",
+        "title": "Analytics Dashboard",
+        "description": "Track issuance and verifications"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Go Digital with Certificates?",
+      "description": "Join thousands of institutions issuing verified digital certificates.",
+      "primaryButton": "Start Free Trial",
+      "secondaryButton": "Book Demo"
+    }
+  },
+  "business-solutions/crm": {
+    "slug": "business-solutions/crm",
+    "category": "business-solutions",
+    "title": "CRM - Customer Relationship Management",
+    "name": "CRM",
+    "tagline": "Build Lasting Customer Relationships",
+    "description": "Manage your entire customer lifecycle with our powerful CRM. From lead generation to customer retention, everything in one platform.",
+    "image": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
+    "hero": {
+      "heading": "Your Complete CRM Solution",
+      "description": "A comprehensive customer relationship management platform that helps you attract, engage, and delight customers at every stage of their journey.",
+      "gradient": "from-indigo-600 to-purple-600",
+      "stats": [
+        { "value": "25K+", "label": "Businesses" },
+        { "value": "10M+", "label": "Contacts Managed" },
+        { "value": "40%", "label": "Sales Increase" },
+        { "value": "24/7", "label": "Support" }
+      ]
+    },
+    "overview": {
+      "title": "All-in-One Customer Management",
+      "description": "Our CRM brings together sales, marketing, and customer service in one powerful platform. Track every interaction, automate workflows, and deliver exceptional customer experiences.",
+      "highlights": [
+        "360-degree customer view",
+        "Sales pipeline management",
+        "Marketing automation",
+        "Customer support ticketing",
+        "Email integration",
+        "Mobile CRM app"
+      ]
+    },
+    "features": [
+      {
+        "title": "Contact Management",
+        "description": "Centralized contact database with complete interaction history, social profiles, and custom fields.",
+        "icon": "users"
+      },
+      {
+        "title": "Sales Pipeline",
+        "description": "Visual sales pipeline with drag-and-drop stages, deal tracking, and forecasting.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "Lead Management",
+        "description": "Capture leads from multiple sources, score automatically, and assign to sales reps intelligently.",
+        "icon": "user-plus"
+      },
+      {
+        "title": "Email Integration",
+        "description": "Two-way email sync, templates, tracking, and automated follow-up sequences.",
+        "icon": "mail"
+      },
+      {
+        "title": "Task Automation",
+        "description": "Automate repetitive tasks, set up workflows, and trigger actions based on customer behavior.",
+        "icon": "zap"
+      },
+      {
+        "title": "Customer Support",
+        "description": "Helpdesk ticketing, knowledge base, live chat, and customer satisfaction tracking.",
+        "icon": "headphones"
+      },
+      {
+        "title": "Reports & Dashboards",
+        "description": "Real-time analytics, custom reports, sales forecasting, and performance metrics.",
+        "icon": "bar-chart"
+      },
+      {
+        "title": "Mobile CRM",
+        "description": "Full-featured mobile app for iOS and Android with offline access.",
+        "icon": "smartphone"
+      }
+    ],
+    "technologies": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "AWS",
+      "Elasticsearch",
+      "TypeScript",
+      "GraphQL"
+    ],
+    "benefits": [
+      "Increase sales productivity by 40%",
+      "Improve customer retention rates",
+      "Automate routine sales tasks",
+      "Get 360-degree customer insights",
+      "Accelerate deal closure",
+      "Better collaboration across teams",
+      "Make data-driven decisions",
+      "Scale as your business grows"
+    ],
+    "pricing": {
+      "model": "Per User/Month",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$12",
+          "description": "For small teams",
+          "features": [
+            "Up to 5 users",
+            "Contact management",
+            "Basic pipeline",
+            "Email integration",
+            "Mobile app",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$25",
+          "description": "For growing teams",
+          "features": [
+            "Up to 50 users",
+            "All Starter features",
+            "Sales automation",
+            "Custom reports",
+            "API access",
+            "Priority support"
+          ],
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$50",
+          "description": "For large teams",
+          "features": [
+            "Unlimited users",
+            "All Professional features",
+            "Advanced automation",
+            "Custom integrations",
+            "Dedicated manager",
+            "White-label option"
+          ]
+        }
+      ]
+    },
+    "screenshots": [
+      {
+        "url": "https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg",
+        "title": "Sales Dashboard",
+        "description": "Real-time sales performance metrics"
+      },
+      {
+        "url": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
+        "title": "Contact Management",
+        "description": "360-degree customer view"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg",
+        "title": "Pipeline View",
+        "description": "Visual sales pipeline management"
+      },
+      {
+        "url": "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg",
+        "title": "Analytics",
+        "description": "Advanced reporting and insights"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Grow Your Business with CRM?",
+      "description": "Join 25,000+ companies using our CRM to close more deals and delight customers.",
+      "primaryButton": "Start Free Trial",
+      "secondaryButton": "Watch Demo"
+    }
   }
 }

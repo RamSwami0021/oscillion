@@ -235,7 +235,7 @@ const Navigation = () => {
         },
       ],
     },
-    { label: 'Training', href: '/training-programs' },
+    { label: 'Products', href: '/products' },
     { label: 'Pricing', href: '/pricing' },
   ];
 

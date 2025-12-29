@@ -8,6 +8,7 @@ import DynamicServicePage from './pages/DynamicServicePage';
 import DynamicHirePage from './pages/DynamicHirePage';
 import DynamicIndustryPage from './pages/DynamicIndustryPage';
 import DynamicProductPage from './pages/DynamicProductPage';
+import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/About';
 import CareerPage from './pages/Careers';
 import TestimonialPage from './pages/Testimonials';
@@ -19,7 +20,6 @@ import FreeToolPage from './pages/FreeToolPage';
 import PricingPage from './pages/PricingPage';
 
 import RequestQuotePage from './pages/RequestQuotePage';
-import TrainingPage from './pages/TrainingPage';
 import CoreValuesPage from './pages/CoreValuesPage';
 import PartnersPage from './pages/PartnersPage';
 import LocationsPage from './pages/LocationsPage';
@@ -47,7 +47,6 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request-quote" element={<RequestQuotePage />} />
           <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/training-programs" element={<TrainingPage />} />
 
           {/* === COMPANY === */}
           <Route path="/company/about" element={<AboutPage />} />
@@ -67,7 +66,8 @@ function App() {
           <Route path="/hire/:teamType/:developerType" element={<DynamicHirePage />} />
 
           {/* === PRODUCTS === */}
-          <Route path="/product/:category/:productType" element={<DynamicProductPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/:category/:productType" element={<DynamicProductPage />} />
 
           {/* === RESOURCES === */}
           <Route path="/resources/engagement-models" element={<EngagementModelsPage />} />
