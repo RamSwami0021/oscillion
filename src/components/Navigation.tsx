@@ -79,75 +79,40 @@ const Navigation = () => {
         {
           title: 'Generative AI',
           items: [
-            { label: 'Generative AI Overview', href: '/services/generative-ai/overview' },
             { label: 'AI Strategy Consulting', href: '/services/generative-ai/ai-strategy-consulting' },
-            { label: 'AI Development', href: '/services/generative-ai/ai-development-services' },
-            { label: 'AI Integration', href: '/services/generative-ai/ai-integration-solutions' },
-            { label: 'AI Training and Support', href: '/services/generative-ai/ai-training-support' },
-            { label: 'AI Engagement', href: '/services/generative-ai/ai-business-engagement' },
+            { label: 'AI Development Services', href: '/services/generative-ai/ai-development-services' },
+            { label: 'AI Integration Solutions', href: '/services/generative-ai/ai-integration-solutions' },
           ],
         },
         {
           title: 'Cloud Services',
           items: [
-            { label: 'Cloud Services Overview', href: '/services/cloud/aws-solutions' },
-            { label: 'AWS', href: '/services/cloud/aws-solutions' },
+            { label: 'AWS Solutions', href: '/services/cloud/aws-solutions' },
             { label: 'Microsoft Azure', href: '/services/cloud/azure-services' },
-            { label: 'Google Cloud Platform (GCP)', href: '/services/cloud/gcp-services' },
+            { label: 'Google Cloud Platform', href: '/services/cloud/gcp-services' },
           ],
         },
         {
           title: 'Web Development',
           items: [
-            { label: 'PHP', href: '/services/web-development/php' },
-            { label: 'Mean Stack', href: '/services/web-development/mean-stack' },
-            { label: 'Node JS', href: '/services/web-development/nodejs' },
-            { label: 'Angular JS', href: '/services/web-development/angularjs' },
-            { label: 'Python Web', href: '/services/web-development/python-web' },
-            { label: 'Code Igniter', href: '/services/web-development/codeigniter' },
-            { label: 'Laravel', href: '/services/web-development/laravel' },
-            { label: 'Cake PHP', href: '/services/web-development/cakephp' },
+            { label: 'React Development', href: '/services/web-development/react-development' },
+            { label: 'Node.js Development', href: '/services/web-development/nodejs' },
+            { label: 'Full Stack Development', href: '/services/web-development/fullstack' },
           ],
         },
         {
-          title: 'App Development',
+          title: 'Mobile Development',
           items: [
-            { label: 'iOS', href: '/services/app-development/ios' },
-            { label: 'Android', href: '/services/app-development/android' },
-            { label: 'Cross Platform', href: '/services/app-development/cross-platform' },
-            { label: 'Flutter', href: '/services/app-development/flutter' },
-            { label: 'Wearable', href: '/services/app-development/wearable' },
+            { label: 'iOS Development', href: '/services/app-development/ios' },
+            { label: 'Android Development', href: '/services/app-development/android' },
             { label: 'React Native', href: '/services/app-development/react-native' },
           ],
         },
         {
-          title: 'CMS & Ecommerce',
+          title: 'UI/UX Design',
           items: [
-            { label: 'WordPress', href: '/services/cms-ecommerce/wordpress' },
-            { label: 'Magento', href: '/services/cms-ecommerce/magento' },
-            { label: 'Joomla', href: '/services/cms-ecommerce/joomla' },
-            { label: 'Shopify', href: '/services/cms-ecommerce/shopify' },
-            { label: 'Opencart', href: '/services/cms-ecommerce/opencart' },
-            { label: 'Drupal', href: '/services/cms-ecommerce/drupal' },
-          ],
-        },
-        {
-          title: 'Digital Marketing',
-          items: [
-            { label: 'SEO', href: '/services/digital-marketing/seo' },
-            { label: 'SMO', href: '/services/digital-marketing/smo' },
-            { label: 'PPC', href: '/services/digital-marketing/ppc' },
-            { label: 'Email Marketing', href: '/services/digital-marketing/email-marketing' },
-            { label: 'Whatsapp Marketing', href: '/services/digital-marketing/whatsapp-marketing' },
-          ],
-        },
-        {
-          title: 'Designing',
-          items: [
-            { label: 'Logo Designing', href: '/services/designing/logo-designing' },
-            { label: 'UI/UX', href: '/services/designing/ui-ux' },
-            { label: 'Graphic Designing', href: '/services/designing/graphic-designing' },
-            { label: 'Custom Designing', href: '/services/designing/custom-designing' },
+            { label: 'UI/UX Design', href: '/services/designing/ui-ux' },
+            { label: 'Logo & Branding', href: '/services/designing/logo-designing' },
           ],
         },
       ],
@@ -292,17 +257,17 @@ const Navigation = () => {
                         />
                         <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white shadow-2xl rounded-xl overflow-hidden animate-dropdown border border-gray-100 z-50 max-h-[calc(100vh-6rem)] overflow-y-auto">
 
-                          <div className={`p-6 grid gap-8 ${item.categories.length <= 2 ? 'grid-cols-2 min-w-[400px]' :
-                            item.categories.length === 3 ? 'grid-cols-3 min-w-[600px]' :
-                              item.categories.length === 4 ? 'grid-cols-4 min-w-[800px]' :
-                                item.categories.length === 5 ? 'grid-cols-5 min-w-[900px]' :
+                          <div className={`p-8 grid gap-8 ${item.categories.length <= 2 ? 'grid-cols-2 min-w-[450px]' :
+                            item.categories.length === 3 ? 'grid-cols-3 min-w-[650px]' :
+                              item.categories.length === 4 ? 'grid-cols-4 min-w-[850px]' :
+                                item.categories.length === 5 ? 'grid-cols-5 min-w-[950px]' :
                                   item.categories.length === 6 ? 'grid-cols-3 min-w-[700px]' :
                                     item.categories.length === 7 ? 'grid-cols-4 min-w-[900px]' :
                                       'grid-cols-4 min-w-[1000px]'
                             }`}>
                             {item.categories.map((category) => (
-                              <div key={category.title} className="space-y-3">
-                                <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider border-b border-gray-200 pb-2">
+                              <div key={category.title} className="space-y-4">
+                                <h3 className="text-xs font-bold text-black uppercase tracking-wider border-b-2 border-black pb-2">
                                   {category.title}
                                 </h3>
                                 <div className="space-y-2">
@@ -310,7 +275,7 @@ const Navigation = () => {
                                     <a
                                       key={subItem.label}
                                       href={subItem.href}
-                                      className="flex items-center space-x-2 text-sm text-gray-700 hover:text-black hover:translate-x-1 transition-all duration-200 group/item"
+                                      className="flex items-center space-x-2 text-sm text-gray-700 hover:text-black hover:translate-x-1 transition-all duration-200 group/item py-1"
                                       onClick={() => setOpenDropdown(null)}
                                     >
                                       {subItem.icon && (
@@ -318,7 +283,7 @@ const Navigation = () => {
                                           {subItem.icon}
                                         </span>
                                       )}
-                                      <span>{subItem.label}</span>
+                                      <span className="font-medium">{subItem.label}</span>
                                     </a>
                                   ))}
                                 </div>
@@ -405,14 +370,14 @@ const Navigation = () => {
                     <div className="ml-2 mt-2 space-y-4 animate-slideDown">
                       {item.categories.map((category) => (
                         <div key={category.title} className="space-y-2">
-                          <h4 className="text-xs font-bold text-gray-900 uppercase tracking-wider px-4 pt-2">
+                          <h4 className="text-xs font-bold text-black uppercase tracking-wider px-4 pt-2 border-b border-gray-300 pb-2">
                             {category.title}
                           </h4>
                           {category.items.map((subItem) => (
                             <a
                               key={subItem.label}
                               href={subItem.href}
-                              className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-200"
+                              className="flex items-center space-x-2 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-all duration-200 font-medium"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {subItem.icon && (
