@@ -750,7 +750,8 @@
     "description": "Build secure, scalable healthcare platforms for clinics, hospitals, and telemedicine providers.",
     "hero": {
       "heading": "Transform Healthcare with Technology",
-      "description": "From patient apps to EMR systems, our solutions enhance patient care, streamline operations, and ensure data security."
+      "description": "From patient apps to EMR systems, our solutions enhance patient care, streamline operations, and ensure data security.",
+      "gradient": "from-red-600 to-pink-600"
     },
     "overview": {
       "title": "Leading Healthcare Technology Partner",
@@ -1706,5 +1707,164 @@
       "Reduce operational costs",
       "Enhance venue safety and security"
     ]
+  },
+  "media-entertainment/media-broadcasting": {
+    "slug": "media-entertainment/media-broadcasting",
+    "title": "Media & Broadcasting Solutions",
+    "name": "Media & Broadcasting",
+    "description": "Transform media and broadcasting with streaming platforms, content management, and digital distribution solutions.",
+    "hero": {
+      "heading": "Revolutionize Media & Broadcasting",
+      "description": "Build cutting-edge platforms for content creation, distribution, and monetization that engage audiences across all channels.",
+      "gradient": "from-violet-700 to-purple-600"
+    },
+    "overview": {
+      "title": "Media Technology Expertise",
+      "description": "We develop comprehensive media and broadcasting solutions that enable content creators, broadcasters, and media companies to deliver engaging experiences across all platforms. From live streaming to VOD platforms, our solutions cover the entire media ecosystem.",
+      "highlights": [
+        "OTT and streaming platform development",
+        "Content management systems (CMS)",
+        "Live broadcasting solutions",
+        "Video-on-demand (VOD) platforms",
+        "Multi-platform content distribution",
+        "Monetization and subscription systems"
+      ]
+    },
+    "services": [
+      {
+        "title": "OTT Streaming Platforms",
+        "description": "Build custom Netflix-style platforms with adaptive streaming, multi-device support, and personalized recommendations.",
+        "icon": "film"
+      },
+      {
+        "title": "Live Broadcasting",
+        "description": "Real-time streaming solutions with low latency, multi-bitrate support, and interactive features.",
+        "icon": "camera"
+      },
+      {
+        "title": "Content Management",
+        "description": "Comprehensive CMS for organizing, tagging, and managing large media libraries with metadata and search.",
+        "icon": "database"
+      },
+      {
+        "title": "Video Analytics",
+        "description": "Track viewer engagement, watch time, drop-off rates, and audience demographics for content optimization.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Monetization Solutions",
+        "description": "Multiple revenue streams including subscriptions, pay-per-view, advertising, and hybrid models.",
+        "icon": "dollarsign"
+      },
+      {
+        "title": "Multi-Platform Distribution",
+        "description": "Deliver content seamlessly across web, mobile, smart TVs, gaming consoles, and streaming devices.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "AWS MediaLive",
+      "Azure Media Services",
+      "Wowza Streaming",
+      "FFmpeg",
+      "HLS/DASH",
+      "React/React Native",
+      "Node.js",
+      "MongoDB",
+      "Redis",
+      "CDN Networks",
+      "DRM Solutions"
+    ],
+    "benefits": [
+      "Reach global audiences instantly",
+      "Reduce broadcasting infrastructure costs",
+      "Enable multiple monetization strategies",
+      "Provide personalized viewing experiences",
+      "Scale to millions of concurrent viewers",
+      "Track detailed audience analytics",
+      "Support all devices and platforms",
+      "Ensure content security with DRM"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Content Strategy",
+        "description": "Define your content delivery model, target platforms, monetization strategy, and technical requirements."
+      },
+      {
+        "step": "02",
+        "title": "Platform Architecture",
+        "description": "Design scalable architecture with encoding pipelines, CDN integration, and multi-platform delivery."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Build custom streaming platform with CMS, player integration, and third-party service connections."
+      },
+      {
+        "step": "04",
+        "title": "Testing & Optimization",
+        "description": "Comprehensive testing across devices, network conditions, and load scenarios for optimal performance."
+      },
+      {
+        "step": "05",
+        "title": "Launch & Scale",
+        "description": "Deploy platform with monitoring, analytics, and ongoing optimization based on viewer behavior."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Sports Broadcasting Platform",
+        "metric": "5M+ Viewers",
+        "description": "Live streaming platform handling millions of concurrent viewers with 99.9% uptime during major events."
+      },
+      {
+        "title": "Educational VOD Platform",
+        "metric": "80% Engagement",
+        "description": "Video learning platform with 80% course completion rate through personalized recommendations."
+      },
+      {
+        "title": "News Broadcasting Network",
+        "metric": "24/7 Streaming",
+        "description": "Continuous live news streaming across 15 countries with multi-language support and localization."
+      }
+    ],
+    "security": {
+      "title": "Content Protection & Security",
+      "features": [
+        "DRM (Widevine, FairPlay, PlayReady)",
+        "Token-based authentication",
+        "Geo-blocking and content restrictions",
+        "Watermarking and forensic tracking",
+        "Encrypted content delivery",
+        "Access control and user permissions",
+        "DMCA compliance tools",
+        "Secure payment processing"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What streaming protocols do you support?",
+        "answer": "We support all major protocols including HLS, DASH, RTMP, WebRTC for live streaming, and adaptive bitrate streaming for optimal quality across all network conditions."
+      },
+      {
+        "question": "Can you integrate with existing content libraries?",
+        "answer": "Yes, we can migrate and integrate your existing content libraries, metadata, and user data from legacy systems to your new platform."
+      },
+      {
+        "question": "How do you handle content delivery at scale?",
+        "answer": "We use global CDN networks, edge caching, and optimized encoding to deliver content efficiently to millions of viewers worldwide."
+      },
+      {
+        "question": "What monetization options are available?",
+        "answer": "We support SVOD (subscriptions), TVOD (pay-per-view), AVOD (advertising), and hybrid models with flexible pricing tiers."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your Media Platform?",
+      "description": "Let's build a cutting-edge streaming solution that engages your audience and grows your business.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Demo"
+    }
   }
 }
