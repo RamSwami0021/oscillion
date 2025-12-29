@@ -10,15 +10,15 @@ const Hero = () => {
     setIsVisible(true);
   }, []);
 
-  const stats = [
-    { icon: Users, value: `${companyData.stats.teamSize}+`, label: 'Expert Team' },
-    { icon: Award, value: `${companyData.stats.projectsCompleted}+`, label: 'Projects' },
-    { icon: Globe, value: `${companyData.stats.clientSatisfaction}%`, label: 'Satisfaction' },
-    { icon: Sparkles, value: `${companyData.stats.countriesServed}+`, label: 'Countries' },
+  const certifications = [
+    { icon: Award, title: 'ISO 27001', label: 'Certified' },
+    { icon: Shield, title: 'SOC 2', label: 'Type II' },
+    { icon: Zap, title: 'AWS', label: 'Partner' },
+    { icon: Code, title: 'Microsoft', label: 'Certified' },
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[600px] h-[600px] bg-gradient-to-br from-gray-700/30 to-gray-900/30 rounded-full blur-3xl -top-48 -left-48 animate-float opacity-50"></div>
@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 py-12 sm:py-16 lg:py-20 text-center">
+      <div className="container-custom relative z-10 py-8 sm:py-12 lg:py-16 text-center">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Badge */}
           <div className="inline-flex items-center mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 animate-fadeInUp">
@@ -87,16 +87,16 @@ const Hero = () => {
           </Link>
         </div>
 
-        {/* Stats */}
+        {/* Certifications */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-4xl mx-auto animate-fadeInUp animation-delay-800 px-4">
-          {stats.map((stat, index) => (
+          {certifications.map((cert, index) => (
             <div
               key={index}
-              className="text-center p-4 lg:p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1"
+              className="text-center p-4 lg:p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
             >
-              <stat.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white mx-auto mb-3" />
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">{stat.value}</div>
-              <div className="text-xs sm:text-sm text-gray-400">{stat.label}</div>
+              <cert.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white mx-auto mb-3 animate-pulse" />
+              <div className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1">{cert.title}</div>
+              <div className="text-xs sm:text-sm text-gray-400">{cert.label}</div>
             </div>
           ))}
         </div>

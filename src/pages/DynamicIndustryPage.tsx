@@ -162,7 +162,7 @@ const DynamicIndustryPage = () => {
   const services = industry.services || industry.features || [];
 
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       <div className="bg-gradient-to-br from-black to-gray-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">

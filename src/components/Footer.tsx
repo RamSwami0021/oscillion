@@ -37,8 +37,9 @@ const footerData: FooterSection[] = [
   links: [
     { label: 'FAQs', href: '/resources/faqs' },
     { label: 'Privacy Policy', href: '/legal/privacy-policy' },
-    { label: 'Terms of Use', href: '/legal/terms-of-use' },
+    { label: 'Terms & Conditions', href: '/legal/terms-of-use' },
     { label: 'Cookie Policy', href: '/legal/cookie-policy' },
+    { label: 'Refund & Cancellation', href: '/legal/refund-cancellation' },
   ],
 },
 {

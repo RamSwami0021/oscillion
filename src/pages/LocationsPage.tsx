@@ -1,7 +1,7 @@
 const LocationsPage = () => {
 
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       <div className={`relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-32`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">

@@ -89,7 +89,7 @@ const DynamicHirePage = () => {
   ];
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       <PageHero
         badge="Hire Developers"
         title={developer.title}

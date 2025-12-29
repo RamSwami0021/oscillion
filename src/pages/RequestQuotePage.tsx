@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react';
-import { Send, CheckCircle, Clock, Users, Award, TrendingUp, Zap, Shield, Code, Globe } from 'lucide-react';
+import { Send, CheckCircle, Users, Zap, Shield, Code, Globe } from 'lucide-react';
 
 const RequestQuotePage = () => {
   const [formData, setFormData] = useState({
@@ -15,13 +15,6 @@ const RequestQuotePage = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const stats = [
-    { icon: Users, value: '1,400+', label: 'Satisfied Clients', color: 'from-black to-gray-700' },
-    { icon: Award, value: '4,200+', label: 'Projects Delivered', color: 'from-gray-800 to-black' },
-    { icon: Clock, value: '<48hrs', label: 'Response Time', color: 'from-black to-gray-600' },
-    { icon: TrendingUp, value: '99%', label: 'Success Rate', color: 'from-gray-700 to-black' },
-  ];
 
   const services = [
     'Web Development',
@@ -114,45 +107,21 @@ const RequestQuotePage = () => {
   };
 
   return (
-    <div className="pt-20 bg-white">
-      <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -top-48 -left-48 animate-float"></div>
-          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -bottom-48 -right-48 animate-float-delayed"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center animate-fadeInUp">
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Request a Quote</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Tell us about your project and we'll provide a detailed proposal with transparent
-              pricing, timeline estimates, and a recommended approach to bring your vision to life.
+    <div className="pt-16">
+      <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-6xl font-bold mb-6">Request a Quote</h1>
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+              Get a detailed quote for custom software development, web applications, mobile apps, cloud solutions, AI development, or IT consulting services - Free consultation and transparent pricing for your project
             </p>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
-                <stat.icon className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="animate-fadeInLeft">
+          <div>
             <h2 className="text-3xl font-bold text-black mb-6">Tell Us About Your Project</h2>
             <p className="text-gray-600 mb-8">
               Fill out the form with as much detail as possible. The more we know about your project,
@@ -160,13 +129,13 @@ const RequestQuotePage = () => {
             </p>
 
             {submitStatus === 'success' && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 animate-fadeIn">
+              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
                 Thank you for your request! We'll review your requirements and get back to you within 24-48 hours.
               </div>
             )}
 
             {submitStatus === 'error' && (
-              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 animate-fadeIn">
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
                 Something went wrong. Please try again or contact us directly.
               </div>
             )}
@@ -316,7 +285,7 @@ const RequestQuotePage = () => {
             </form>
           </div>
 
-          <div className="animate-fadeInRight">
+          <div>
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 mb-8 shadow-lg">
               <h3 className="text-2xl font-bold text-black mb-6">What Happens Next?</h3>
               <div className="space-y-6">

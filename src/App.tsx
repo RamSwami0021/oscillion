@@ -32,6 +32,7 @@ import CaseStudiesPage from './pages/CaseStudiesPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfUsePage from './pages/TermsOfUsePage';
 import CookiePolicyPage from './pages/CookiePolicyPage';
+import RefundCancellationPage from './pages/RefundCancellationPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import PartnerLoginPage from './pages/PartnerLoginPage';
@@ -88,6 +89,7 @@ function App() {
           <Route path="/legal/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/legal/terms-of-use" element={<TermsOfUsePage />} />
           <Route path="/legal/cookie-policy" element={<CookiePolicyPage />} />
+          <Route path="/legal/refund-cancellation" element={<RefundCancellationPage />} />
 
           {/* === ACCOUNT === */}
           <Route path="/login" element={<LoginPage />} />

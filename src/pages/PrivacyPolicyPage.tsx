@@ -1,32 +1,34 @@
 const PrivacyPolicyPage = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       <div className={`relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-32`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-6xl font-bold mb-6">Privacy Policy</h1>
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-              This privacy statement explains what personal data **Oscillion Software** collects from you and how we use that data.
+              Comprehensive privacy policy for software development services, web applications, mobile apps, cloud solutions, and IT consulting - Learn how Oscillion Software protects your personal data
             </p>
           </div>
         </div>
       </div>
 
       <div className="py-24 bg-white">
-        <div className="mx-auto px-4 space-y-8 text-gray-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-gray-800">
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">1. Who We Are</h2>
-            <p>
-              We are <strong>Oscillion Software</strong>, a provider of custom software development and IT consulting services.
-              As you read this document, you are currently visiting our website, which is a digital face of our company. We are strongly committed to delivering you a great experience while you are browsing our website, to sharing materials you might be interested in, to promptly clarifying any questions, and to ensuring the uninterrupted functioning of the website so that you don’t feel inconvenienced.
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">1. Who We Are</h2>
+            <p className="leading-relaxed">
+              We are <strong>Oscillion Software</strong>, a leading provider of custom software development, web application development, mobile app development, cloud computing services, artificial intelligence solutions, and comprehensive IT consulting services. As a trusted technology partner serving businesses worldwide, we specialize in delivering innovative digital solutions including enterprise software development, e-commerce platforms, SaaS applications, and digital transformation services.
+            </p>
+            <p className="mt-4 leading-relaxed">
+              As you read this document, you are currently visiting our website, which showcases our software development expertise, IT consulting services, and technology solutions. We are strongly committed to protecting your privacy, securing your personal data, and delivering an exceptional experience while you explore our web development services, mobile application solutions, cloud infrastructure offerings, and digital marketing expertise.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">2. What Personal Data We Collect</h2>
-            <p>
-              We collect data to provide you with feedback about our services. You provide some of this data directly (for example, when you fill in the "Contact us" form, download materials, or ask a question). We collect some data using technologies like cookies, and receiving error reports or usage-data from software running on your device.
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">2. What Personal Data We Collect</h2>
+            <p className="leading-relaxed">
+              We collect data to provide you with information about our software development services, web application development, mobile app creation, cloud computing solutions, AI development services, digital marketing offerings, and IT consulting expertise. You provide some of this data directly (for example, when you request a quote for custom software development, fill in contact forms for web development services, download whitepapers about cloud solutions, or inquire about our mobile app development capabilities). We collect some data using technologies like cookies, analytics tools, and receiving error reports or usage-data from software running on your device.
             </p>
             <p>
               We also obtain data from third parties. We protect data obtained from third parties using the practices described below, plus any additional restrictions imposed by the source of the data. These third-party sources may include:
@@ -54,7 +56,7 @@ const PrivacyPolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">3. Why We Collect Personal Data</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">3. Why We Collect Personal Data</h2>
             <p>
               We collect data for the following purposes: sending communications (including promotional communications), advertising, analysing website visitor statistics, technical website troubleshooting, improving website user experience.
             </p>
@@ -67,7 +69,7 @@ const PrivacyPolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">4. Why We Share Personal Data</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">4. Why We Share Personal Data</h2>
             <p>
               We will share your information with our Development Center, which processes your request. The Development Center must abide by our data privacy and security requirements, and is not permitted to use personal data for purposes other than specified above.
             </p>
@@ -85,7 +87,7 @@ const PrivacyPolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">5. What Rights You Have</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">5. What Rights You Have</h2>
             <p>
               You are entitled to view, amend, or delete the personal information we hold about you:
             </p>
@@ -100,7 +102,7 @@ const PrivacyPolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">6. Cookies & Similar Technologies</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">6. Cookies & Similar Technologies</h2>
             <p>
               We use cookies (small text files placed on your device) and similar technologies to provide our online services and to help collect data. The text in a cookie often consists of a string of numbers and letters that uniquely identifies your computer, but it can contain other information as well.
             </p>
@@ -124,14 +126,14 @@ const PrivacyPolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">7. How We Secure Your Data</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">7. How We Secure Your Data</h2>
             <p>
               We use a variety of security technologies and procedures to help protect your personal data from unauthorised access, use or disclosure. For example, we store the personal data you provide on computer systems that have limited access and are in controlled facilities.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">8. For How Long the Data Will Be Stored</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">8. For How Long the Data Will Be Stored</h2>
             <p>
               We retain personal data for as long as necessary to provide the services and feedback you have requested, or for other essential purposes such as complying with our legal obligations or enforcing our agreements. Because these needs can vary for different types of data, the actual retention periods may vary. In determining retention periods we consider:
             </p>
@@ -142,21 +144,21 @@ const PrivacyPolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">9. How We Change This Privacy Policy</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">9. How We Change This Privacy Policy</h2>
             <p>
               We will update this privacy statement when necessary. When we post changes to this statement, we will revise the "last updated" date at the top of the statement. If the changes are material, we may notify you either by prominently posting a notice before the changes take effect, or by directly sending you a notification.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">10. How to Contact Us</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">10. How to Contact Us</h2>
             <p>
               If you have a privacy concern, complaint or question, please email our Data Protection Officer at <a href="mailto:data-protection-officer@oscillionsoftware.com" className="text-blue-600">data-protection-officer@oscillionsoftware.com</a>. We will respond within 30 days.
             </p>
           </section>
 
-          <p className="text-gray-500 text-sm mt-8">
-            Last updated: August 7, 2025
+          <p className="text-gray-500 text-sm mt-12 text-center">
+            Last updated: December 29, 2025
           </p>
 
         </div>

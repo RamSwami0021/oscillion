@@ -1,22 +1,22 @@
 const CookiePolicyPage = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       <div className={`relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-32`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-6xl font-bold mb-6">Cookie Policy</h1>
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-              This Cookie Policy explains how Oscillion Software uses cookies and similar tracking technologies on our website.
+              Cookie policy for software development website - Learn how Oscillion Software uses cookies for analytics, performance tracking, and improving user experience
             </p>
           </div>
         </div>
       </div>
 
       <div className="py-24 bg-white">
-        <div className="mx-auto px-4 space-y-8 text-gray-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-gray-800">
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">1. What Are Cookies?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">1. What Are Cookies?</h2>
             <p>
               Cookies are small files placed on your device when you visit a website. They are widely used to store information about your visit or preferences. Cookies can be stored for various lengths of time depending on their purpose and can be either "persistent" (stored until you delete them or they expire) or "session" (deleted when you close your browser).
             </p>
@@ -30,7 +30,7 @@ const CookiePolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">2. Types of Cookies We Use</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">2. Types of Cookies We Use</h2>
             <div className="space-y-4">
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h3 className="font-semibold text-gray-800 mb-2">Strictly Necessary Cookies</h3>
@@ -67,7 +67,7 @@ const CookiePolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">3. How We Use Cookies</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">3. How We Use Cookies</h2>
             <p>
               We use cookies for the following purposes:
             </p>
@@ -83,7 +83,7 @@ const CookiePolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">4. Third-Party Services</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">4. Third-Party Services</h2>
             <p>
               Our website may use third-party services that also place cookies on your device. These services include:
             </p>
@@ -99,7 +99,7 @@ const CookiePolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">5. Cookie Duration</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">5. Cookie Duration</h2>
             <p>
               The duration cookies remain on your device depends on their type and purpose:
             </p>
@@ -110,7 +110,7 @@ const CookiePolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">6. Your Cookie Choices</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">6. Your Cookie Choices</h2>
             <p>
               You have several options regarding cookies:
             </p>
@@ -137,14 +137,14 @@ const CookiePolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">7. Privacy and Data Protection</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">7. Privacy and Data Protection</h2>
             <p>
               Information collected through cookies is subject to our Privacy Policy. Cookies that contain personal information are protected by the same security measures and privacy protections outlined in our Privacy Policy. For more information about how we handle your data, please review our <a href="/privacy-policy" className="text-blue-600 hover:underline">Privacy Policy</a>.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">8. Compliance with Laws</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">8. Compliance with Laws</h2>
             <p>
               We comply with applicable laws and regulations regarding cookie use, including:
             </p>
@@ -157,14 +157,14 @@ const CookiePolicyPage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">9. Changes to This Cookie Policy</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">9. Changes to This Cookie Policy</h2>
             <p>
               We may update this Cookie Policy from time to time to reflect changes in our cookie practices, technology, or applicable laws. When we make material changes, we will notify you by updating the "Last Updated" date below. Your continued use of our website after such changes constitutes your acceptance of the updated Cookie Policy.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-2">10. Contact Us</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">10. Contact Us</h2>
             <p>
               If you have any questions about our use of cookies or this Cookie Policy, please contact us at:
             </p>
@@ -174,8 +174,8 @@ const CookiePolicyPage = () => {
             </div>
           </section>
 
-          <p className="text-gray-500 text-sm mt-12">
-            Last updated: August 7, 2025
+          <p className="text-gray-500 text-sm mt-12 text-center">
+            Last updated: December 29, 2025
           </p>
 
         </div>

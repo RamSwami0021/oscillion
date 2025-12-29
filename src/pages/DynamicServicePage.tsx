@@ -67,7 +67,7 @@ const DynamicServicePage = () => {
   ];
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       <PageHero
         badge={serviceCategory.name}
         title={service.name}

@@ -111,7 +111,7 @@ const CareerPage = () => {
   });
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -top-48 -left-48 animate-float"></div>

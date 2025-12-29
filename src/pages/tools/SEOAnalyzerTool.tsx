@@ -105,7 +105,7 @@ const SEOAnalyzerTool = () => {
   };
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       <PageHero
         badge="Free SEO Tool"
         title="SEO Analyzer Tool"
