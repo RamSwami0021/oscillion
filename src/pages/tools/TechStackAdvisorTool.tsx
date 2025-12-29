@@ -264,7 +264,7 @@ const TechStackAdvisorTool = () => {
   const serviceRecs = getServiceRecommendations();
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 sm:pt-20 bg-white">
       <PageHero
         badge="Free Tech Tool"
         title="Tech Stack Advisor"

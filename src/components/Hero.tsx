@@ -18,7 +18,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[600px] h-[600px] bg-gradient-to-br from-gray-700/30 to-gray-900/30 rounded-full blur-3xl -top-48 -left-48 animate-float opacity-50"></div>
@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 py-12 sm:py-16 lg:py-20 text-center">
+      <div className="container-custom relative z-10 py-8 sm:py-12 lg:py-16 text-center">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Badge */}
           <div className="inline-flex items-center mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 animate-fadeInUp">

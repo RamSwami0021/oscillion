@@ -27,7 +27,7 @@ const PageHero = ({ badge, title, subtitle, icon, className = '' }: PageHeroProp
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 py-16 sm:py-20 lg:py-24">
+      <div className="container-custom relative z-10 py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           {/* Icon */}
           {icon && (
