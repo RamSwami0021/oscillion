@@ -10,11 +10,11 @@ const Hero = () => {
     setIsVisible(true);
   }, []);
 
-  const stats = [
-    { icon: Users, value: `${companyData.stats.teamSize}+`, label: 'Expert Team' },
-    { icon: Award, value: `${companyData.stats.projectsCompleted}+`, label: 'Projects' },
-    { icon: Globe, value: `${companyData.stats.clientSatisfaction}%`, label: 'Satisfaction' },
-    { icon: Sparkles, value: `${companyData.stats.countriesServed}+`, label: 'Countries' },
+  const certifications = [
+    { icon: Award, title: 'ISO 27001', label: 'Certified' },
+    { icon: Shield, title: 'SOC 2', label: 'Type II' },
+    { icon: Zap, title: 'AWS', label: 'Partner' },
+    { icon: Code, title: 'Microsoft', label: 'Certified' },
   ];
 
   return (
@@ -87,16 +87,16 @@ const Hero = () => {
           </Link>
         </div>
 
-        {/* Stats */}
+        {/* Certifications */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-4xl mx-auto animate-fadeInUp animation-delay-800 px-4">
-          {stats.map((stat, index) => (
+          {certifications.map((cert, index) => (
             <div
               key={index}
-              className="text-center p-4 lg:p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1"
+              className="text-center p-4 lg:p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
             >
-              <stat.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white mx-auto mb-3" />
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">{stat.value}</div>
-              <div className="text-xs sm:text-sm text-gray-400">{stat.label}</div>
+              <cert.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white mx-auto mb-3 animate-pulse" />
+              <div className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1">{cert.title}</div>
+              <div className="text-xs sm:text-sm text-gray-400">{cert.label}</div>
             </div>
           ))}
         </div>
