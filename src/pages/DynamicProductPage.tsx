@@ -9,6 +9,7 @@ import {
   Settings, Cloud, Server, Bell, MessageSquare, Search, Filter,
   FileCheck, Lock as LockIcon, Briefcase as BriefcaseIcon, HeadphonesIcon
 } from 'lucide-react';
+import PageHero from '../components/common/PageHero';
 import productsData from '../data/product.json';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -155,33 +156,24 @@ const DynamicProductPage = () => {
 
   return (
     <div className="pt-20 bg-white">
-      <div className={`relative bg-gradient-to-br ${product.hero.gradient} text-white py-32 overflow-hidden`}>
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="absolute w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl -top-48 -left-48 animate-float"></div>
-          <div className="absolute w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl -bottom-48 -right-48 animate-float-delayed"></div>
-          <div className="absolute w-[300px] h-[300px] bg-white/5 rounded-full blur-2xl top-1/2 left-1/2 animate-pulse"></div>
-        </div>
+      <PageHero
+        badge={product.category.split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+        title={product.hero.heading}
+        subtitle={product.hero.description}
+      />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center animate-fadeInUp">
-            <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
-              <Star className="w-4 h-4 mr-2 fill-current" />
-              {product.category.split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
-            </div>
-            <h1 className="text-6xl sm:text-7xl font-bold mb-6 leading-tight">{product.hero.heading}</h1>
-            <p className="text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed mb-10">
-              {product.hero.description}
-            </p>
+      <div className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <Link
                 to="/contact"
-                className="group inline-flex items-center justify-center px-10 py-5 bg-white text-black rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                className="group inline-flex items-center justify-center px-10 py-5 bg-black text-white rounded-xl font-bold text-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 {product.cta.primaryButton}
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <button className="group inline-flex items-center justify-center px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-xl font-bold text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">
+              <button className="group inline-flex items-center justify-center px-10 py-5 bg-white border-2 border-gray-300 text-black rounded-xl font-bold text-lg hover:border-black transition-all duration-300 transform hover:scale-105">
                 <Play className="w-5 h-5 mr-2" />
                 Watch Demo
               </button>
@@ -192,11 +184,11 @@ const DynamicProductPage = () => {
                 {product.hero.stats.map((stat: any, index: number) => (
                   <div
                     key={index}
-                    className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300 animate-fadeInUp"
+                    className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-lg animate-fadeInUp"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <div className="text-5xl font-bold mb-2">{stat.value}</div>
-                    <div className="text-sm text-gray-200 uppercase tracking-wider">{stat.label}</div>
+                    <div className="text-5xl font-bold mb-2 text-black">{stat.value}</div>
+                    <div className="text-sm text-gray-600 uppercase tracking-wider font-semibold">{stat.label}</div>
                   </div>
                 ))}
               </div>
