@@ -2,23 +2,838 @@
   "retail-commerce/ecommerce": {
     "slug": "retail-commerce/ecommerce",
     "title": "Ecommerce Solutions",
+    "name": "Ecommerce",
     "description": "Empower your online business with scalable ecommerce technology and tailored digital strategies.",
     "hero": {
-      "heading": "Revolutionize Your Online Store",
-      "description": "We design and build seamless ecommerce experiences that drive conversions and customer loyalty.",
-      "gradient": "from-pink-600 to-purple-700"
+      "heading": "Transform Your Online Retail Business",
+      "description": "Build powerful, scalable ecommerce platforms that drive sales, enhance customer experience, and grow your digital presence.",
+      "gradient": "from-blue-600 to-cyan-600",
+      "stats": [
+        { "value": "500+", "label": "Ecommerce Projects" },
+        { "value": "98%", "label": "Client Satisfaction" },
+        { "value": "3x", "label": "Average ROI" },
+        { "value": "24/7", "label": "Support Available" }
+      ]
     },
-    "features": [
-      { "title": "Custom Storefronts", "description": "Develop user-friendly and responsive online stores.", "icon": "shoppingbag" },
-      { "title": "Payment Integration", "description": "Secure payment gateways with global currency support.", "icon": "lock" },
-      { "title": "Inventory Automation", "description": "Sync and manage stock levels in real-time.", "icon": "code" }
+    "overview": {
+      "title": "Leading Ecommerce Development Company",
+      "description": "We specialize in creating high-performance ecommerce solutions that transform the way businesses sell online. From custom storefronts to enterprise-level marketplaces, our expertise spans the entire ecommerce ecosystem.",
+      "highlights": [
+        "Custom ecommerce platform development",
+        "Multi-vendor marketplace solutions",
+        "Headless commerce architecture",
+        "Payment gateway integration",
+        "Real-time inventory management",
+        "Advanced analytics and reporting"
+      ]
+    },
+    "services": [
+      {
+        "title": "Custom Storefront Development",
+        "description": "Build unique, branded shopping experiences tailored to your business needs with responsive design and seamless navigation.",
+        "icon": "shoppingbag"
+      },
+      {
+        "title": "Payment Gateway Integration",
+        "description": "Secure, PCI-compliant payment processing with support for multiple currencies, payment methods, and fraud detection.",
+        "icon": "lock"
+      },
+      {
+        "title": "Inventory Management",
+        "description": "Real-time stock tracking, automated reordering, multi-warehouse support, and seamless ERP integration.",
+        "icon": "database"
+      },
+      {
+        "title": "Shopping Cart Optimization",
+        "description": "Reduce cart abandonment with streamlined checkout, guest checkout options, and one-click purchasing.",
+        "icon": "shoppingcart"
+      },
+      {
+        "title": "Product Recommendation Engine",
+        "description": "AI-powered personalization that increases average order value through intelligent product suggestions.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Mobile Commerce Solutions",
+        "description": "Native iOS and Android shopping apps with offline capabilities and push notifications.",
+        "icon": "smartphone"
+      }
+    ],
+    "technologies": [
+      "Shopify Plus",
+      "Magento",
+      "WooCommerce",
+      "BigCommerce",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "PayPal",
+      "Elastic Search",
+      "Redis",
+      "AWS"
     ],
     "benefits": [
       "Increase conversion rates by up to 40%",
-      "Reduce cart abandonment",
-      "Integrate with Shopify, WooCommerce, or Magento",
-      "Optimized for all devices"
-    ]
+      "Reduce cart abandonment by 25%",
+      "Improve page load speeds for better SEO",
+      "Scale to handle millions of transactions",
+      "24/7 automated customer support",
+      "Advanced fraud prevention",
+      "Multi-currency and multi-language support",
+      "Seamless third-party integrations"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Discovery & Planning",
+        "description": "Analyze your business model, target audience, and competitive landscape to create a strategic roadmap."
+      },
+      {
+        "step": "2",
+        "title": "Design & Prototyping",
+        "description": "Create intuitive user interfaces and engaging shopping experiences through wireframes and prototypes."
+      },
+      {
+        "step": "3",
+        "title": "Development & Integration",
+        "description": "Build your platform with clean code, integrate payment systems, and connect essential business tools."
+      },
+      {
+        "step": "4",
+        "title": "Testing & Optimization",
+        "description": "Rigorous quality assurance, performance testing, and conversion rate optimization before launch."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Support",
+        "description": "Smooth deployment with ongoing maintenance, updates, and 24/7 technical support."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Fashion Retailer Success",
+        "metric": "150% increase in online sales",
+        "description": "Helped a leading fashion brand migrate to Shopify Plus with custom features"
+      },
+      {
+        "title": "B2B Marketplace Platform",
+        "metric": "10,000+ daily transactions",
+        "description": "Built a scalable B2B platform handling complex pricing and bulk orders"
+      },
+      {
+        "title": "Global Electronics Store",
+        "metric": "35 countries served",
+        "description": "Deployed multi-currency store with localized experiences"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "B2C Ecommerce",
+        "description": "Direct-to-consumer platforms with personalized shopping experiences",
+        "features": ["Wishlist management", "Customer reviews", "Loyalty programs", "Gift cards"]
+      },
+      {
+        "title": "B2B Ecommerce",
+        "description": "Enterprise solutions for wholesale and bulk ordering",
+        "features": ["Custom pricing", "Bulk ordering", "Quote management", "Account hierarchies"]
+      },
+      {
+        "title": "Marketplace Platforms",
+        "description": "Multi-vendor marketplaces with vendor management systems",
+        "features": ["Vendor dashboards", "Commission management", "Dispute resolution", "Rating systems"]
+      },
+      {
+        "title": "Subscription Commerce",
+        "description": "Recurring billing and subscription management solutions",
+        "features": ["Auto-billing", "Subscription tiers", "Pause/resume options", "Renewal management"]
+      }
+    ],
+    "security": {
+      "title": "Enterprise-Grade Security",
+      "features": [
+        "PCI DSS compliance for payment processing",
+        "SSL encryption for all transactions",
+        "DDoS protection and firewall",
+        "Regular security audits and updates",
+        "GDPR and privacy compliance",
+        "Fraud detection and prevention"
+      ]
+    },
+    "pricing": {
+      "title": "Flexible Pricing Models",
+      "models": [
+        {
+          "name": "Starter Package",
+          "price": "₹2,50,000",
+          "description": "Perfect for small businesses",
+          "features": ["Up to 500 products", "Payment gateway integration", "Mobile responsive", "Basic SEO"]
+        },
+        {
+          "name": "Growth Package",
+          "price": "₹5,00,000",
+          "description": "For growing businesses",
+          "features": ["Unlimited products", "Advanced analytics", "Marketing automation", "Custom integrations"]
+        },
+        {
+          "name": "Enterprise Package",
+          "price": "Custom",
+          "description": "For large-scale operations",
+          "features": ["Multi-store management", "Dedicated support", "Custom development", "SLA guarantees"]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What ecommerce platform is best for my business?",
+        "answer": "It depends on your business size, budget, and technical requirements. We'll analyze your needs and recommend the best platform whether it's Shopify, Magento, WooCommerce, or a custom solution."
+      },
+      {
+        "question": "How long does it take to build an ecommerce website?",
+        "answer": "Typically 8-16 weeks for a standard store, and 4-6 months for enterprise-level platforms with custom features."
+      },
+      {
+        "question": "Do you provide ongoing maintenance and support?",
+        "answer": "Yes, we offer comprehensive maintenance packages including updates, security patches, feature enhancements, and 24/7 technical support."
+      },
+      {
+        "question": "Can you migrate my existing store to a new platform?",
+        "answer": "Absolutely. We handle complete store migrations including products, customers, orders, and historical data with zero downtime."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Launch Your Ecommerce Success Story?",
+      "description": "Let's build an online store that converts visitors into loyal customers.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Consultation"
+    }
+  },
+  "retail-commerce/fashion": {
+    "slug": "retail-commerce/fashion",
+    "title": "Fashion & Apparel Solutions",
+    "name": "Fashion & Apparel",
+    "description": "Transform your fashion business with cutting-edge technology solutions designed for the modern retail landscape.",
+    "hero": {
+      "heading": "Elevate Your Fashion Brand with Digital Excellence",
+      "description": "Custom ecommerce platforms, mobile apps, and digital solutions that bring your fashion vision to life and connect with style-conscious customers.",
+      "gradient": "from-pink-600 to-rose-600",
+      "stats": [
+        { "value": "200+", "label": "Fashion Brands" },
+        { "value": "50M+", "label": "Transactions Processed" },
+        { "value": "45%", "label": "Avg. Conversion Increase" },
+        { "value": "99.9%", "label": "Uptime Guarantee" }
+      ]
+    },
+    "overview": {
+      "title": "Fashion-First Technology Solutions",
+      "description": "We understand the unique challenges of the fashion industry - from seasonal trends to size variations and style preferences. Our technology solutions are built specifically for fashion retailers, brands, and marketplaces.",
+      "highlights": [
+        "Visual-first shopping experiences",
+        "Size recommendation engines",
+        "Virtual try-on technology",
+        "Trend analytics and forecasting",
+        "Influencer and social commerce integration",
+        "Omnichannel retail solutions"
+      ]
+    },
+    "services": [
+      {
+        "title": "Fashion Ecommerce Platforms",
+        "description": "Stunning, conversion-optimized online stores with advanced filtering, visual search, and style recommendations.",
+        "icon": "shoppingbag"
+      },
+      {
+        "title": "Virtual Try-On & AR",
+        "description": "Augmented reality features that let customers visualize products before purchase, reducing returns.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Size & Fit Recommendations",
+        "description": "AI-powered size recommendations based on body measurements and style preferences to reduce returns.",
+        "icon": "users"
+      },
+      {
+        "title": "Lookbook & Catalog Management",
+        "description": "Dynamic lookbooks, style guides, and seasonal catalogs that inspire and drive sales.",
+        "icon": "film"
+      },
+      {
+        "title": "Influencer Commerce Integration",
+        "description": "Seamless integration with social platforms for influencer collaborations and shoppable posts.",
+        "icon": "heart"
+      },
+      {
+        "title": "Inventory & Trend Analytics",
+        "description": "Real-time insights into trending styles, stock levels, and predictive analytics for better buying decisions.",
+        "icon": "lightbulb"
+      }
+    ],
+    "technologies": [
+      "Shopify Plus",
+      "Magento Commerce",
+      "React Native",
+      "TensorFlow",
+      "AR Kit",
+      "Computer Vision",
+      "Elastic Search",
+      "Stripe",
+      "Instagram API",
+      "Google Analytics",
+      "BigQuery",
+      "AWS"
+    ],
+    "benefits": [
+      "Reduce return rates by up to 30% with size recommendations",
+      "Increase engagement with visual search",
+      "Boost social commerce sales",
+      "Streamline omnichannel operations",
+      "Improve inventory turnover",
+      "Enhance customer loyalty programs",
+      "Enable faster seasonal launches",
+      "Gain insights into trending styles"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Brand Discovery",
+        "description": "Understand your brand identity, target audience, and unique value proposition in the fashion market."
+      },
+      {
+        "step": "2",
+        "title": "Experience Design",
+        "description": "Create visually stunning designs that reflect your brand aesthetic and provide intuitive shopping flows."
+      },
+      {
+        "step": "3",
+        "title": "Platform Development",
+        "description": "Build high-performance platforms with fashion-specific features like visual search and style recommendations."
+      },
+      {
+        "step": "4",
+        "title": "Integration & Testing",
+        "description": "Connect with your existing systems, social platforms, and ensure flawless performance across devices."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Growth",
+        "description": "Deploy your platform and continuously optimize based on customer behavior and fashion trends."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Premium Luxury Brand",
+        "metric": "200% revenue growth",
+        "description": "Launched exclusive online boutique with VIP membership features"
+      },
+      {
+        "title": "Fast Fashion Retailer",
+        "metric": "5M monthly visitors",
+        "description": "Built scalable platform handling rapid inventory changes"
+      },
+      {
+        "title": "Sustainable Fashion Startup",
+        "metric": "25% return reduction",
+        "description": "Implemented AI-powered size recommendations"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Luxury Fashion Platforms",
+        "description": "High-end ecommerce with exclusive experiences and VIP features",
+        "features": ["Private sales", "Personal styling", "Concierge service", "Limited editions"]
+      },
+      {
+        "title": "Fast Fashion Solutions",
+        "description": "Rapid product launches with real-time inventory management",
+        "features": ["Quick product uploads", "Flash sales", "Trend tracking", "Social integration"]
+      },
+      {
+        "title": "Sustainable Fashion Tech",
+        "description": "Transparency tools for eco-conscious consumers",
+        "features": ["Product traceability", "Sustainability scores", "Recycling programs", "Carbon footprint"]
+      },
+      {
+        "title": "Fashion Marketplace",
+        "description": "Multi-brand platforms connecting designers with shoppers",
+        "features": ["Designer dashboards", "Commission tracking", "Quality control", "Brand pages"]
+      }
+    ],
+    "security": {
+      "title": "Secure Fashion Commerce",
+      "features": [
+        "PCI-compliant payment processing",
+        "Customer data protection",
+        "Fraud prevention for high-value items",
+        "Secure authentication for VIP accounts",
+        "Copyright and brand protection",
+        "Counterfeit prevention measures"
+      ]
+    },
+    "pricing": {
+      "title": "Fashion-Focused Packages",
+      "models": [
+        {
+          "name": "Boutique Package",
+          "price": "₹3,00,000",
+          "description": "For independent designers and small brands",
+          "features": ["Up to 200 products", "Lookbook feature", "Basic analytics", "Social integration"]
+        },
+        {
+          "name": "Brand Package",
+          "price": "₹6,00,000",
+          "description": "For established fashion brands",
+          "features": ["Unlimited products", "Size recommendations", "AR try-on", "Advanced marketing"]
+        },
+        {
+          "name": "Fashion House Package",
+          "price": "Custom",
+          "description": "For luxury brands and large retailers",
+          "features": ["Multi-brand support", "VIP experiences", "Custom features", "White-glove service"]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How can technology reduce return rates in fashion?",
+        "answer": "We implement AI-powered size recommendations, virtual try-on features, detailed product visualization, and accurate size charts to help customers make informed decisions, reducing returns by up to 30%."
+      },
+      {
+        "question": "Can you integrate with Instagram and social media?",
+        "answer": "Yes! We create seamless integrations with Instagram Shopping, Facebook Shops, Pinterest, and other platforms to enable social commerce and influencer collaborations."
+      },
+      {
+        "question": "Do you support seasonal collections and fashion shows?",
+        "answer": "Absolutely. Our platforms are designed for the fashion calendar with features for pre-orders, waitlists, exclusive launches, and digital fashion show experiences."
+      },
+      {
+        "question": "How do you handle fashion photography and product images?",
+        "answer": "We provide guidance on image requirements and can recommend photography services. Our platforms support 360-degree views, zoom features, and video content."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your Fashion Brand?",
+      "description": "Let's create a digital experience as stylish as your designs.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "View Portfolio"
+    }
+  },
+  "retail-commerce/food-beverage": {
+    "slug": "retail-commerce/food-beverage",
+    "title": "Food & Beverage Solutions",
+    "name": "Food & Beverage",
+    "description": "Innovative technology solutions for restaurants, food delivery, cloud kitchens, and beverage brands.",
+    "hero": {
+      "heading": "Digital Solutions for Modern Food Businesses",
+      "description": "From online ordering to kitchen management, we build technology that helps food businesses thrive in the digital age.",
+      "gradient": "from-orange-600 to-red-600",
+      "stats": [
+        { "value": "150+", "label": "Food Businesses" },
+        { "value": "2M+", "label": "Orders Delivered" },
+        { "value": "60%", "label": "Order Increase" },
+        { "value": "<3min", "label": "Avg. Order Time" }
+      ]
+    },
+    "overview": {
+      "title": "Complete Food & Beverage Technology Suite",
+      "description": "Whether you're a restaurant, cloud kitchen, food delivery service, or beverage brand, we provide end-to-end technology solutions that streamline operations and enhance customer experience.",
+      "highlights": [
+        "Online ordering and delivery platforms",
+        "Restaurant management systems",
+        "Kitchen display and automation",
+        "Table reservation systems",
+        "Menu management and digital menus",
+        "Loyalty and rewards programs"
+      ]
+    },
+    "services": [
+      {
+        "title": "Online Ordering Platforms",
+        "description": "Custom-branded websites and mobile apps for direct ordering, reducing commission fees from third-party platforms.",
+        "icon": "shoppingbag"
+      },
+      {
+        "title": "Restaurant Management System",
+        "description": "Complete POS integration, inventory tracking, staff management, and real-time reporting for efficient operations.",
+        "icon": "utensils"
+      },
+      {
+        "title": "Kitchen Display Systems",
+        "description": "Digital kitchen management with order routing, preparation timers, and staff coordination.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Table Reservation & QR Menus",
+        "description": "Contactless dining with QR code menus, table booking, and waitlist management.",
+        "icon": "qrcode"
+      },
+      {
+        "title": "Delivery Fleet Management",
+        "description": "Real-time driver tracking, route optimization, and delivery performance analytics.",
+        "icon": "truck"
+      },
+      {
+        "title": "Loyalty & Rewards Programs",
+        "description": "Customer retention programs with points, offers, and personalized promotions.",
+        "icon": "gift"
+      }
+    ],
+    "technologies": [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "PostgreSQL",
+      "Redis",
+      "Firebase",
+      "Stripe",
+      "Twilio",
+      "Google Maps API",
+      "Socket.io",
+      "AWS",
+      "Docker"
+    ],
+    "benefits": [
+      "Reduce third-party commission costs by 70%",
+      "Increase direct orders by 60%",
+      "Improve kitchen efficiency by 40%",
+      "Reduce wait times and improve service",
+      "Better inventory management",
+      "Enhanced customer insights",
+      "Automated marketing campaigns",
+      "Seamless omnichannel experience"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Business Analysis",
+        "description": "Understand your operations, menu, customer base, and business goals."
+      },
+      {
+        "step": "2",
+        "title": "Solution Design",
+        "description": "Design user-friendly interfaces for customers, kitchen staff, and delivery partners."
+      },
+      {
+        "step": "3",
+        "title": "Development & Integration",
+        "description": "Build your platform and integrate with existing POS, payment systems, and delivery services."
+      },
+      {
+        "step": "4",
+        "title": "Staff Training & Testing",
+        "description": "Train your team and conduct thorough testing to ensure smooth operations."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Optimization",
+        "description": "Go live with continuous monitoring and optimization based on performance data."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Multi-Location Restaurant Chain",
+        "metric": "85% order automation",
+        "description": "Deployed unified ordering system across 25 locations"
+      },
+      {
+        "title": "Cloud Kitchen Network",
+        "metric": "300% growth in 12 months",
+        "description": "Built scalable platform for multi-brand virtual kitchens"
+      },
+      {
+        "title": "Premium Dining Restaurant",
+        "metric": "50% table turnover improvement",
+        "description": "Implemented smart reservation and waitlist system"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Quick Service Restaurants",
+        "description": "Fast ordering and pickup solutions for QSR chains",
+        "features": ["Mobile ordering", "Kiosk integration", "Drive-thru systems", "Quick checkout"]
+      },
+      {
+        "title": "Fine Dining Solutions",
+        "description": "Premium experiences for upscale restaurants",
+        "features": ["Reservation system", "Wine pairing suggestions", "Special occasion features", "Private events"]
+      },
+      {
+        "title": "Cloud Kitchen Platforms",
+        "description": "Virtual kitchen operations and multi-brand management",
+        "features": ["Multi-brand support", "Kitchen efficiency", "Delivery optimization", "Data analytics"]
+      },
+      {
+        "title": "Food Delivery Services",
+        "description": "Complete delivery marketplace platforms",
+        "features": ["Restaurant onboarding", "Driver management", "Real-time tracking", "Commission handling"]
+      }
+    ],
+    "security": {
+      "title": "Food Safety & Data Security",
+      "features": [
+        "Secure payment processing",
+        "Customer data protection",
+        "Food safety compliance tracking",
+        "Health and safety protocols",
+        "Contactless payment options",
+        "GDPR compliance for customer data"
+      ]
+    },
+    "pricing": {
+      "title": "Flexible Pricing for Food Businesses",
+      "models": [
+        {
+          "name": "Single Location",
+          "price": "₹1,50,000",
+          "description": "Perfect for independent restaurants",
+          "features": ["Online ordering", "Basic POS integration", "Customer database", "Email notifications"]
+        },
+        {
+          "name": "Multi-Location",
+          "price": "₹4,00,000",
+          "description": "For restaurant chains",
+          "features": ["Centralized management", "Advanced analytics", "Loyalty program", "Marketing automation"]
+        },
+        {
+          "name": "Enterprise Solution",
+          "price": "Custom",
+          "description": "For large-scale operations",
+          "features": ["Custom development", "API access", "Dedicated support", "White-label options"]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can customers order through their own app?",
+        "answer": "Yes! We build custom-branded mobile apps for iOS and Android, giving you direct access to customers without third-party commissions."
+      },
+      {
+        "question": "How do you integrate with existing POS systems?",
+        "answer": "We have experience integrating with major POS systems like Square, Toast, Clover, and can build custom integrations for proprietary systems."
+      },
+      {
+        "question": "What about delivery logistics?",
+        "answer": "We can build your own delivery management system or integrate with existing providers like DoorDash, Uber Eats, or local delivery services."
+      },
+      {
+        "question": "Can you handle peak hours and high order volumes?",
+        "answer": "Our platforms are built to scale automatically, handling thousands of concurrent orders without performance issues."
+      }
+    ],
+    "cta": {
+      "title": "Hungry for Digital Growth?",
+      "description": "Let's cook up a technology solution that serves your business perfectly.",
+      "primaryButton": "Schedule Demo",
+      "secondaryButton": "See Features"
+    }
+  },
+  "retail-commerce/kitchenware": {
+    "slug": "retail-commerce/kitchenware",
+    "title": "Kitchenware & Home Goods Solutions",
+    "name": "Kitchenware & Home Goods",
+    "description": "Specialized ecommerce solutions for kitchenware, cookware, and home goods retailers.",
+    "hero": {
+      "heading": "Elevate Your Kitchenware Brand Online",
+      "description": "Build engaging online shopping experiences that showcase your products and inspire home chefs with specialized ecommerce solutions.",
+      "gradient": "from-teal-600 to-green-600",
+      "stats": [
+        { "value": "100+", "label": "Home Goods Brands" },
+        { "value": "1M+", "label": "Products Sold" },
+        { "value": "35%", "label": "Conversion Rate Boost" },
+        { "value": "4.8/5", "label": "Customer Rating" }
+      ]
+    },
+    "overview": {
+      "title": "Purpose-Built for Kitchenware Retail",
+      "description": "We understand the unique needs of kitchenware retailers - from detailed product specifications to recipe integration and product care guides. Our solutions help customers find the perfect tools for their culinary adventures.",
+      "highlights": [
+        "Product visualization and 360° views",
+        "Recipe integration and content marketing",
+        "Product care and maintenance guides",
+        "Bundle and set recommendations",
+        "Gift registry and wedding lists",
+        "B2B wholesale portals"
+      ]
+    },
+    "services": [
+      {
+        "title": "Visual Product Showcase",
+        "description": "High-quality product galleries with zoom, 360° rotation, and lifestyle imagery to help customers make confident decisions.",
+        "icon": "camera"
+      },
+      {
+        "title": "Recipe Integration Platform",
+        "description": "Connect products with recipes, cooking tutorials, and culinary content to inspire and educate customers.",
+        "icon": "book"
+      },
+      {
+        "title": "Product Finder & Guides",
+        "description": "Interactive tools to help customers find the right cookware, knives, or appliances based on their needs.",
+        "icon": "search"
+      },
+      {
+        "title": "Bundle Builder",
+        "description": "Let customers create custom kitchen sets with intelligent product bundling and discounts.",
+        "icon": "package"
+      },
+      {
+        "title": "Gift Registry System",
+        "description": "Wedding registry and gift list features perfect for kitchenware purchases.",
+        "icon": "gift"
+      },
+      {
+        "title": "B2B Wholesale Portal",
+        "description": "Separate portal for restaurant supply and bulk buyers with custom pricing and ordering.",
+        "icon": "building"
+      }
+    ],
+    "technologies": [
+      "Shopify Plus",
+      "WooCommerce",
+      "Magento",
+      "React",
+      "Vue.js",
+      "Node.js",
+      "Algolia Search",
+      "Stripe",
+      "PayPal",
+      "Klaviyo",
+      "Google Analytics",
+      "AWS"
+    ],
+    "benefits": [
+      "Reduce product returns with detailed information",
+      "Increase average order value through bundling",
+      "Build brand loyalty with content marketing",
+      "Streamline B2B and B2C operations",
+      "Improve SEO with recipe content",
+      "Enhance gift-giving experiences",
+      "Simplify product comparison",
+      "Enable omnichannel retail"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Product Catalog Analysis",
+        "description": "Review your product range, categories, and understand your target customers' shopping behavior."
+      },
+      {
+        "step": "2",
+        "title": "Content Strategy",
+        "description": "Plan product photography, recipe content, care guides, and educational resources."
+      },
+      {
+        "step": "3",
+        "title": "Platform Development",
+        "description": "Build your ecommerce store with specialized features for kitchenware retail."
+      },
+      {
+        "step": "4",
+        "title": "Content Migration",
+        "description": "Import products, optimize descriptions, and set up categorization and filters."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Marketing",
+        "description": "Go live with integrated marketing tools and ongoing optimization."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Premium Cookware Brand",
+        "metric": "180% online revenue growth",
+        "description": "Launched D2C store with recipe integration and product guides"
+      },
+      {
+        "title": "Kitchen Appliance Retailer",
+        "metric": "40% cart value increase",
+        "description": "Implemented smart bundling and product recommendations"
+      },
+      {
+        "title": "Specialty Knife Manufacturer",
+        "metric": "65% reduction in support queries",
+        "description": "Added comprehensive product care and selection guides"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Premium Cookware Stores",
+        "description": "Luxury kitchenware with rich product storytelling",
+        "features": ["Heritage stories", "Craftsmanship videos", "Chef endorsements", "Care instructions"]
+      },
+      {
+        "title": "Kitchen Appliance Retail",
+        "description": "Small and large appliance ecommerce",
+        "features": ["Product comparisons", "Warranty management", "Installation guides", "Video demos"]
+      },
+      {
+        "title": "Multi-Brand Marketplace",
+        "description": "Curated kitchenware marketplace",
+        "features": ["Brand pages", "Vendor management", "Quality control", "Editorial content"]
+      },
+      {
+        "title": "Restaurant Supply B2B",
+        "description": "Commercial kitchenware wholesale",
+        "features": ["Bulk pricing", "Quote requests", "Account management", "Purchase orders"]
+      }
+    ],
+    "security": {
+      "title": "Secure Retail Operations",
+      "features": [
+        "PCI-compliant payment processing",
+        "Customer account protection",
+        "Secure gift registry privacy",
+        "B2B pricing confidentiality",
+        "Fraud prevention systems",
+        "Data backup and recovery"
+      ]
+    },
+    "pricing": {
+      "title": "Tailored Pricing Plans",
+      "models": [
+        {
+          "name": "Starter Store",
+          "price": "₹2,00,000",
+          "description": "For small kitchenware businesses",
+          "features": ["Up to 300 products", "Recipe blog", "Basic analytics", "Email marketing"]
+        },
+        {
+          "name": "Professional Store",
+          "price": "₹4,50,000",
+          "description": "For established brands",
+          "features": ["Unlimited products", "Bundle builder", "Gift registry", "Advanced features"]
+        },
+        {
+          "name": "Enterprise Solution",
+          "price": "Custom",
+          "description": "For large retailers and manufacturers",
+          "features": ["B2B portal", "Custom development", "API integrations", "Dedicated support"]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do you handle complex product variations like size and color?",
+        "answer": "Our platforms support unlimited product variations with dynamic pricing, inventory tracking per variant, and smart filtering to help customers find exactly what they need."
+      },
+      {
+        "question": "Can you integrate recipe content with product pages?",
+        "answer": "Yes! We create seamless connections between recipes and products, letting customers shop ingredients or tools directly from recipe pages, increasing engagement and sales."
+      },
+      {
+        "question": "Do you support wedding registries and gift lists?",
+        "answer": "Absolutely. We build comprehensive gift registry systems with privacy controls, item tracking, and easy sharing options perfect for wedding and housewarming gifts."
+      },
+      {
+        "question": "How do you handle both B2C and B2B customers?",
+        "answer": "We create separate experiences within one platform - public-facing retail store for consumers and a secure wholesale portal for business buyers with custom pricing and ordering."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Cook Up Online Success?",
+      "description": "Let's build an ecommerce store that showcases your kitchenware beautifully.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "View Demo"
+    }
   },
   "healthcare-education/healthcare": {
     "slug": "healthcare-education/healthcare",
