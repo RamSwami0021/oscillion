@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
 import CookieConsent from './components/CookieConsent';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import DynamicServicePage from './pages/DynamicServicePage';
 import DynamicHirePage from './pages/DynamicHirePage';
@@ -43,6 +44,7 @@ import NotFoundPage from './pages/NotFoundPage';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Navigation />
         <Routes>
