@@ -1,4 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Calendar, Clock, User, ArrowLeft, Eye, Heart, Share2, Tag, Facebook, Linkedin, Mail } from 'lucide-react';
 import blogsData from '../data/blogs.json';
 
@@ -7,6 +8,10 @@ const BlogDetailPage = () => {
 
   const allBlogs = [...blogsData.featured, ...blogsData.recent];
   const blog = allBlogs.find(b => b.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!blog) {
     return <Navigate to="/blog" replace />;

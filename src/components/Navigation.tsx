@@ -290,7 +290,7 @@ const Navigation = () => {
                           className="fixed inset-0 bg-black bg-opacity-20 z-40"
                           onClick={() => setOpenDropdown(null)}
                         />
-                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white shadow-2xl rounded-xl overflow-hidden animate-dropdown border border-gray-100 z-50 max-h-[calc(100vh-6rem)] overflow-y-auto">
+                        <div className="fixed left-1/2 top-20 bg-white shadow-2xl rounded-xl overflow-hidden animate-dropdown border border-gray-100 z-50 max-h-[calc(100vh-6rem)] overflow-y-auto" style={{ transform: 'translateX(-50%)' }}>
 
                           <div className={`p-8 grid gap-8 ${item.categories.length <= 2 ? 'grid-cols-2 min-w-[450px]' :
                             item.categories.length === 3 ? 'grid-cols-3 min-w-[650px]' :

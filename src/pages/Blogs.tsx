@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, User, ArrowRight, Search, Tag, TrendingUp, Eye, Heart } from 'lucide-react';
 import blogsData from '../data/blogs.json';
@@ -6,6 +6,10 @@ import blogsData from '../data/blogs.json';
 const BlogPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const allBlogs = [...blogsData.featured, ...blogsData.recent];
 
