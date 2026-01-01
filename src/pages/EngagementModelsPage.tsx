@@ -242,7 +242,7 @@ const EngagementModelsPage = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fadeInUp">
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Engagement Models</h1>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6">Engagement Models</h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Choose the perfect collaboration model for your project. We offer flexible engagement
               options designed to match your budget, timeline, and business objectives.

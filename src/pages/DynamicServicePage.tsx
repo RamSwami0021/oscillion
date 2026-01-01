@@ -80,7 +80,7 @@ const DynamicServicePage = () => {
           <div className="lg:col-span-2 space-y-16">
             {/* Key Features */}
             <div className="animate-fadeInUp">
-              <h2 className="text-4xl font-bold text-black mb-8">Key Features</h2>
+              <h2 className="text-4xl sm:text-6xl font-bold mb-6">Key Features</h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {service.features.map((feature, index) => (
                   <div

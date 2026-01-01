@@ -120,7 +120,7 @@ const CareerPage = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fadeInUp">
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Join Our Team</h1>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6">Join Our Team</h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Build your career with a global leader in technology. Work on exciting projects,
               collaborate with talented professionals, and make an impact.

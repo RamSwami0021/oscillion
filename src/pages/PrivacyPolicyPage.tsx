@@ -4,7 +4,7 @@ const PrivacyPolicyPage = () => {
       <div className={`relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-32`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-6xl font-bold mb-6">Privacy Policy</h1>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6">Privacy Policy</h1>
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               Comprehensive privacy policy for software development services, web applications, mobile apps, cloud solutions, and IT consulting - Learn how Oscillion Software protects your personal data
             </p>

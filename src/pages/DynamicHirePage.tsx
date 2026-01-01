@@ -100,7 +100,7 @@ const DynamicHirePage = () => {
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-16">
             <div className="animate-fadeInUp">
-              <h2 className="text-4xl font-bold text-black mb-8">Core Competencies</h2>
+              <h2 className="text-4xl sm:text-6xl font-bold mb-6">Core Competencies</h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {developer.features.map((feature, index) => (
                   <div

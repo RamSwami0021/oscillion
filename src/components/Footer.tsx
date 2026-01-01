@@ -56,10 +56,10 @@ const footerData: FooterSection[] = [
   key: 'community',
   title: 'Community',
   links: [
-    { label: 'Instagram', href: 'https://www.instagram.com/oscillion', icon: Instagram },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/oscillion', icon: Linkedin },
-    { label: 'Facebook', href: 'https://www.facebook.com/oscillion', icon: Facebook },
-    { label: 'WhatsApp', href: 'https://wa.me/919999999999', icon: MessageCircle },
+    { label: 'Instagram', href: 'https://www.instagram.com/oscillionsoftware', icon: Instagram },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/oscillionsoftware', icon: Linkedin },
+    { label: 'Facebook', href: 'https://www.facebook.com/oscillionsoftware', icon: Facebook },
+    { label: 'WhatsApp', href: 'https://wa.me/919119161210', icon: MessageCircle },
   ],
 },
 {

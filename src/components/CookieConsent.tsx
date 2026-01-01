@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { Link } from "react-router-dom";
+
 
 export default function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false);
@@ -31,9 +33,7 @@ export default function CookieConsent() {
             <p className="text-sm text-gray-700">
               We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.
               By clicking "Accept All", you consent to our use of cookies.{' '}
-              <a href="#" className="text-black hover:text-gray-700 underline">
-                Learn more
-              </a>
+              <Link to="/legal/cookie-policy">Learn more</Link>
             </p>
           </div>
           <div className="flex items-center gap-3">

@@ -135,14 +135,14 @@ const FaqPage = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      description: '+1 (212) 555-0123',
-      action: 'tel:+12125550123'
+      description: '+919119161210',
+      action: 'tel:+919119161210'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      description: 'support@oscillion.com',
-      action: 'mailto:support@oscillion.com'
+      description: 'oscillionsoftware@gmail.com',
+      action: 'mailto:oscillionsoftware@gmail.com'
     },
     {
       icon: MessageCircle,
@@ -162,7 +162,7 @@ const FaqPage = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fadeInUp">
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Find answers to common questions about our services, pricing, and support.
               Can't find what you're looking for? Contact us directly.

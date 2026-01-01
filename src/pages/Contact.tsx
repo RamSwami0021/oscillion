@@ -33,36 +33,36 @@ const ContactPage = () => {
 
   const offices = [
     {
-      city: 'New York',
-      country: 'USA',
-      address: '350 Fifth Avenue, New York, NY 10118',
-      phone: '+1 (212) 555-0123',
-      email: 'newyork@oscillion.com',
-      hours: 'Mon-Fri: 9:00 AM - 6:00 PM EST'
+      city: 'Sikar',
+      country: 'Rajasthan',
+      address: 'Mail Market, Bala Ji Mandir, Losal, Sikar, Rajasthan',
+      phone: '+91 9119161210',
+      email: 'oscillionsoftware@gmail.com',
+      hours: 'Mon-Sat: 9:30 AM - 6:30 PM IST'
     },
     {
-      city: 'London',
-      country: 'UK',
-      address: '1 Canada Square, Canary Wharf, London E14 5AB',
-      phone: '+44 20 7946 0958',
-      email: 'london@oscillion.com',
-      hours: 'Mon-Fri: 9:00 AM - 6:00 PM GMT'
+      city: 'Jaipur',
+      country: 'Rajasthan',
+      address: '2nd 666, Janak Marg, Vaishali Nagar, Jaipur, Rajasthan',
+      phone: '+91 9119161210',
+      email: 'oscillionsoftware@gmail.com',
+      hours: 'Mon-Sat: 9:30 AM - 6:30 PM IST'
     },
     {
-      city: 'Singapore',
-      country: 'Singapore',
-      address: '1 Raffles Place, Singapore 048616',
-      phone: '+65 6789 0123',
-      email: 'singapore@oscillion.com',
-      hours: 'Mon-Fri: 9:00 AM - 6:00 PM SGT'
+      city: 'Pune',
+      country: 'Maharashtra',
+      address: 'Coming Soon',
+      phone: '+91 9119161210',
+      email: 'oscillionsoftware@gmail.com',
+      hours: 'Launching Soon'
     },
     {
-      city: 'Dubai',
-      country: 'UAE',
-      address: 'Dubai Internet City, Dubai, UAE',
-      phone: '+971 4 123 4567',
-      email: 'dubai@oscillion.com',
-      hours: 'Sun-Thu: 9:00 AM - 6:00 PM GST'
+      city: 'Ahmedabad',
+      country: 'Gujarat',
+      address: 'Coming Soon',
+      phone: '+91 9119161210',
+      email: 'oscillionsoftware@gmail.com',
+      hours: 'Launching Soon'
     }
   ];
 
@@ -88,7 +88,7 @@ const ContactPage = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fadeInUp">
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Get In Touch</h1>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6">Get In Touch</h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Have a project in mind? Let's discuss how we can help transform your
               business with innovative technology solutions.
@@ -129,7 +129,7 @@ const ContactPage = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
-                    placeholder="John Doe"
+                    placeholder="oscillion"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ const ContactPage = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
-                    placeholder="john@company.com"
+                    placeholder="oscillionsoftware@gmail.com"
                   />
                 </div>
               </div>
@@ -158,7 +158,7 @@ const ContactPage = () => {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+91 9119161210"
                   />
                 </div>
 
@@ -171,7 +171,7 @@ const ContactPage = () => {
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
-                    placeholder="Your Company"
+                    placeholder="Oscillion Software Services LLP"
                   />
                 </div>
               </div>
@@ -230,31 +230,31 @@ const ContactPage = () => {
 
               <div className="space-y-4">
                 <a
-                  href="mailto:contact@oscillion.com"
+                  href="mailto:oscillionsoftware@gmail.com"
                   className="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <Mail className="w-6 h-6 text-black mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <div className="font-semibold text-black mb-1">Email Us</div>
-                    <div className="text-gray-600">contact@oscillion.com</div>
+                    <div className="text-gray-600">oscillionsoftware@gmail.com</div>
                     <div className="text-sm text-gray-500 mt-1">We typically respond within 24 hours</div>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+12125550123"
+                  href="tel:+919119161210"
                   className="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <Phone className="w-6 h-6 text-black mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <div className="font-semibold text-black mb-1">Call Us</div>
-                    <div className="text-gray-600">+1 (212) 555-0123</div>
+                    <div className="text-gray-600">+91 9119161210</div>
                     <div className="text-sm text-gray-500 mt-1">Mon-Fri: 9:00 AM - 6:00 PM EST</div>
                   </div>
                 </a>
 
                 <a
-                  href="https://wa.me/12125550123"
+                  href="https://wa.me/9119161210"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
@@ -273,7 +273,7 @@ const ContactPage = () => {
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
               <div className="flex space-x-4 mb-6">
                 <a
-                  href="https://linkedin.com/company/oscillion"
+                  href="https://linkedin.com/company/oscillionsoftware"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-opacity-20 transition-all duration-300 transform hover:scale-110"
@@ -281,7 +281,7 @@ const ContactPage = () => {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://facebook.com/oscillion"
+                  href="https://facebook.com/oscillionsoftware"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-opacity-20 transition-all duration-300 transform hover:scale-110"
@@ -289,7 +289,7 @@ const ContactPage = () => {
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://instagram.com/oscillion"
+                  href="https://instagram.com/oscillionsoftware"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-opacity-20 transition-all duration-300 transform hover:scale-110"
@@ -297,7 +297,7 @@ const ContactPage = () => {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://oscillion.com"
+                  href="https://oscillionsoftware.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-opacity-20 transition-all duration-300 transform hover:scale-110"

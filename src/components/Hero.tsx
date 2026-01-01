@@ -11,11 +11,12 @@ const Hero = () => {
   }, []);
 
   const certifications = [
-    { icon: Award, title: 'ISO 27001', label: 'Certified' },
-    { icon: Shield, title: 'SOC 2', label: 'Type II' },
-    { icon: Zap, title: 'AWS', label: 'Partner' },
-    { icon: Code, title: 'Microsoft', label: 'Certified' },
-  ];
+  { icon: Shield, title: 'ISO 27001', label: 'Certified' },
+  { icon: Shield, title: 'ISO 9001', label: 'Certified' },
+  { icon: Shield, title: 'ISO 14001', label: 'Certified' },
+  { icon: Shield, title: 'ISO 45001', label: 'Certified' },
+];
+
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
@@ -73,10 +74,10 @@ const Hero = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp animation-delay-600 px-4 mb-12 lg:mb-16">
           <Link
-            to="/services/generative-ai/overview"
+            to="/request-quote"
             className="btn-primary inline-flex items-center justify-center w-full sm:w-auto group"
           >
-            <span className="mr-2">Explore Services</span>
+            <span className="mr-2">Request Quote</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
           <Link

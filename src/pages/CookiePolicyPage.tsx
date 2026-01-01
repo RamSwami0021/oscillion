@@ -4,7 +4,7 @@ const CookiePolicyPage = () => {
       <div className={`relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-32`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-6xl font-bold mb-6">Cookie Policy</h1>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6">Cookie Policy</h1>
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               Cookie policy for software development website - Learn how Oscillion Software uses cookies for analytics, performance tracking, and improving user experience
             </p>
