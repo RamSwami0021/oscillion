@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import './styles/theme.css';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import "./styles/theme.css";
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,11 @@
 
 @layer base {
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -65,7 +69,8 @@
   }
 
   @keyframes float {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0px) rotate(0deg);
     }
     50% {
@@ -191,11 +196,19 @@
   }
 }
 
-  .logo-mobile {
-    width: 300px;
-    height: auto;
-    margin-left: -50px;
-  }
+.db {
+  border: 2px solid red;
+}
+
+#nav-popup {
+  transform: translateX(-50%) !important;
+}
+
+.logo-mobile {
+  width: 300px;
+  height: auto;
+  margin-left: -50px;
+}
 @media (max-width: 640px) {
   .logo-mobile {
     width: 250px;
@@ -203,4 +216,3 @@
     margin-left: -40px;
   }
 }
-
